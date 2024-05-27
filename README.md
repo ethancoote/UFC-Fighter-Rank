@@ -1,3 +1,3 @@
 # StatsSite
 
-Using Petite-Vue and Firebase to create a simple stats website.
+Petite-Vue and Firebase used to create a simple stats website.
