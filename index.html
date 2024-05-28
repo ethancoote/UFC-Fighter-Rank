@@ -11,11 +11,13 @@
             crossorigin="anonymous"
         />
 
-        <title>Stats Homepage</title>
+        <title>MMA ELO</title>
     </head>
     <body>
-        <h1 style="text-align: center;">Stats Homepage</h1>
-        <div class="container">
+        <h1 style="text-align: center;">MMA ELO</h1>
+        <div v-scope="{count: 0}" class="container">
+            Number of lines: {{ count }}
+            <button @click="count++">Increase by 1</button>
             <table class="table">
                 <thead>
                     <tr>
