@@ -1,1 +1,1 @@
-# Gets winner, loser and date of every UFC fight
+# Gets winner, loser, weight class, and date of every UFC fight
