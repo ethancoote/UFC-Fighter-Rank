@@ -1,6 +1,9 @@
 # Gets winner, loser, weight class, and date of every UFC fight
 from bs4 import BeautifulSoup
 from selenium import webdriver
+from selenium.webdriver.support import expected_conditions
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.common.by import By
 import time
 
 def init_dataset():
