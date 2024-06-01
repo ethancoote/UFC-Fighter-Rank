@@ -11,9 +11,12 @@ def init_dataset():
     url = "http://www.ufcstats.com/statistics/events/completed?page=all"
     driver = getDriver()
     driver.get(url)
-    time.sleep(1) # wait for root to be fully loaded
-    mainPage = BeautifulSoup(driver.page_source, 'html.parser')
-    print(mainPage.prettify())
+    # time.sleep(4) # wait for root to be fully loaded
+    element = WebDriverWait(driver, 10).until(expected_conditions.visibility_of_all_elements_located((By.CSS_SELECTOR, "black")))
+    time.sleep(1)
+    print(item.text for item in element)
+    # mainPage = BeautifulSoup(driver.page_source, 'html.parser')
+    # print(mainPage.prettify())
         
 def getDriver():
     options = webdriver.ChromeOptions()
