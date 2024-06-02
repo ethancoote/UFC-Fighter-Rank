@@ -10,10 +10,10 @@ def init_dataset():
     url = "http://www.ufcstats.com/statistics/events/completed?page=all"
     driver = getDriver()
     driver.get(url)
-    element = WebDriverWait(driver, 10).until(expected_conditions.visibility_of_all_elements_located((By.CLASS_NAME, "b-statistics__table-row")))
-    html = driver.find_elements('class name', "b-statistics__table-row")
+    element = WebDriverWait(driver, 10).until(expected_conditions.visibility_of_all_elements_located((By.CSS_SELECTOR, "a")))
+    html = driver.find_elements('css selector', "a")
     for item in html:
-        print(item.text)
+        print(item.get_attribute('href'))
         
 def getDriver():
     options = webdriver.ChromeOptions()
