@@ -4,19 +4,16 @@ from selenium import webdriver
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
-import time
 
 def init_dataset():
 
     url = "http://www.ufcstats.com/statistics/events/completed?page=all"
     driver = getDriver()
     driver.get(url)
-    # time.sleep(4) # wait for root to be fully loaded
-    element = WebDriverWait(driver, 10).until(expected_conditions.visibility_of_all_elements_located((By.CSS_SELECTOR, "black")))
-    time.sleep(1)
-    print(item.text for item in element)
-    # mainPage = BeautifulSoup(driver.page_source, 'html.parser')
-    # print(mainPage.prettify())
+    element = WebDriverWait(driver, 10).until(expected_conditions.visibility_of_all_elements_located((By.CLASS_NAME, "b-statistics__table-row")))
+    html = driver.find_elements('class name', "b-statistics__table-row")
+    for item in html:
+        print(item.text)
         
 def getDriver():
     options = webdriver.ChromeOptions()
