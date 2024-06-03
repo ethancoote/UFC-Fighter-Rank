@@ -5,7 +5,7 @@ from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 
-all_fights_results = []
+all_fight_results = []
 
 def init_dataset():
 
@@ -26,11 +26,14 @@ def init_dataset():
 
 def get_event_results(event_link):
     outcomes = []
+    weight_classes = []
 
     driver = get_driver()
     driver.get(event_link)
     WebDriverWait(driver, 10).until(expected_conditions.visibility_of_all_elements_located((By.CLASS_NAME, "b-flag__text")))
     win_flags = driver.find_elements('class name', "b-flag__text")
+    fighter_names = driver.find_elements('css selector', "a.b-link.b-link_style_black")
+    table_text = driver.find_elements('css selector', "p.b-fight-details__table-text")
 
     for flag in win_flags:
         # one outcome is added for each fighter
@@ -41,15 +44,24 @@ def get_event_results(event_link):
             outcomes.append("DRAW")
         else:
             outcomes.append(flag.text) 
-        print("here")
 
-    fighter_names = driver.find_elements('css selector', "a.b-link.b-link_style_black")
+    for item in table_text:
+        if "weight" in item.text:
+            # added twice to match outcomes indexes
+            weight_classes.append(item.text)
+            weight_classes.append(item.text)
 
     i = 0 # this will iterate through the outcomes list, to see if the fight was a win, a draw, or other
+    fight_outcome = []
     for fighter in fighter_names:
-        print(f"{fighter.text}: {outcomes[i]}")
+        fight_outcome.append(fighter.text)
+        fight_outcome.append(outcomes[i])
+        if not i%2 == 0:
+            all_fight_results.append([fight_outcome[0], fight_outcome[1], fight_outcome[2], fight_outcome[3], weight_classes[i]])
+            fight_outcome.clear()
         i+=1
 
+    return all_fight_results
 
 
 def get_driver():
