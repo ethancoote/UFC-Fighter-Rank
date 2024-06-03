@@ -7,13 +7,21 @@ from selenium.webdriver.common.by import By
 
 def init_dataset():
 
+    all_links = []
     url = "http://www.ufcstats.com/statistics/events/completed?page=all"
     driver = getDriver()
     driver.get(url)
     element = WebDriverWait(driver, 10).until(expected_conditions.visibility_of_all_elements_located((By.CSS_SELECTOR, "a")))
     html = driver.find_elements('css selector', "a")
+
     for item in html:
-        print(item.get_attribute('href'))
+        if 'http://www.ufcstats.com/event-details/' in str(item.get_attribute('href')):
+            all_links.append(item.get_attribute('href'))
+    
+    del all_links[0]
+    return all_links
+
+
         
 def getDriver():
     options = webdriver.ChromeOptions()

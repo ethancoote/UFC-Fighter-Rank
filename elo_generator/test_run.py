@@ -2,3 +2,4 @@
 import stat_scraper
 
 stat_scraper.init_dataset()
+
