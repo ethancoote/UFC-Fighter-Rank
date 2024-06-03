@@ -44,7 +44,7 @@ def get_event_results(event_link):
         outcomes.append(flag.text)
         if (flag.text == "WIN"):
             outcomes.append("LOSS")
-        elif (flag.text != "DRAW"):
+        elif (flag.text != "DRAW" and flag.text != "NC"):
             outcomes.append(flag.text)
              
     for item in table_text:
