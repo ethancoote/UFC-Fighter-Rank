@@ -19,10 +19,14 @@ def init_dataset():
     for item in html:
         if 'http://www.ufcstats.com/event-details/' in str(item.get_attribute('href')):
             all_links.append(item.get_attribute('href'))
-    
+    driver.close()
+
     del all_links[0]
     for link in all_links:
         get_event_results(link)
+
+    
+    return all_fight_results
 
 def get_event_results(event_link):
     outcomes = []
@@ -40,13 +44,11 @@ def get_event_results(event_link):
         outcomes.append(flag.text)
         if (flag.text == "WIN"):
             outcomes.append("LOSS")
-        elif (flag.text == "DRAW"):
-            outcomes.append("DRAW")
-        else:
-            outcomes.append(flag.text) 
-
+        elif (flag.text != "DRAW"):
+            outcomes.append(flag.text)
+             
     for item in table_text:
-        if "weight" in item.text:
+        if "weight" in str(item.text).lower():
             # added twice to match outcomes indexes
             weight_classes.append(item.text)
             weight_classes.append(item.text)
@@ -61,6 +63,7 @@ def get_event_results(event_link):
             fight_outcome.clear()
         i+=1
 
+    driver.close()
     return all_fight_results
 
 
