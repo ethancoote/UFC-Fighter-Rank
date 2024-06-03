@@ -5,13 +5,15 @@ from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 
+all_fights_results = []
+
 def init_dataset():
 
     all_links = []
     url = "http://www.ufcstats.com/statistics/events/completed?page=all"
-    driver = getDriver()
+    driver = get_driver()
     driver.get(url)
-    element = WebDriverWait(driver, 10).until(expected_conditions.visibility_of_all_elements_located((By.CSS_SELECTOR, "a")))
+    WebDriverWait(driver, 10).until(expected_conditions.visibility_of_all_elements_located((By.CSS_SELECTOR, "a")))
     html = driver.find_elements('css selector', "a")
 
     for item in html:
@@ -19,11 +21,38 @@ def init_dataset():
             all_links.append(item.get_attribute('href'))
     
     del all_links[0]
-    return all_links
+    for link in all_links:
+        get_event_results(link)
+
+def get_event_results(event_link):
+    outcomes = []
+
+    driver = get_driver()
+    driver.get(event_link)
+    WebDriverWait(driver, 10).until(expected_conditions.visibility_of_all_elements_located((By.CLASS_NAME, "b-flag__text")))
+    win_flags = driver.find_elements('class name', "b-flag__text")
+
+    for flag in win_flags:
+        # one outcome is added for each fighter
+        outcomes.append(flag.text)
+        if (flag.text == "WIN"):
+            outcomes.append("LOSS")
+        elif (flag.text == "DRAW"):
+            outcomes.append("DRAW")
+        else:
+            outcomes.append(flag.text) 
+        print("here")
+
+    fighter_names = driver.find_elements('css selector', "a.b-link.b-link_style_black")
+
+    i = 0 # this will iterate through the outcomes list, to see if the fight was a win, a draw, or other
+    for fighter in fighter_names:
+        print(f"{fighter.text}: {outcomes[i]}")
+        i+=1
 
 
-        
-def getDriver():
+
+def get_driver():
     options = webdriver.ChromeOptions()
     options.add_argument("--no-sandbox")
     options.add_argument("--headless")
