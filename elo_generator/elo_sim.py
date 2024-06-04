@@ -1,1 +1,0 @@
-# Takes all UFC fights in order and give each fighter an elo rating

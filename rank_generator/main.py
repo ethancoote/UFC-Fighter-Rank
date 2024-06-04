@@ -1,5 +1,6 @@
 # main file
 import stat_scraper
+import rank_sim
 import os
 
 current_path = os.path.dirname(os.path.abspath(__file__))
@@ -12,9 +13,10 @@ def run_init():
     for fight in results:
         f.write(f"{fight[0]}-{fight[1]}-{fight[2]}-{fight[3]}-{fight[4]}\n")
 
-def run_elo_sim():
-    print("not active")
+def run_rank_sim():
+    rank_sim.rank_sim(current_path + "/fighter_data/fighter_data_test_sample.txt")
+    
 
-run_init()
-#run_elo_sim()
+# run_init()
+run_rank_sim()
 
