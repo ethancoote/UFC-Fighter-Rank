@@ -76,8 +76,10 @@ def get_ordered_list(filename):
         split_line = line.split("-")
         ordered_list.append(split_line)
 
+    return ordered_list
+
 def update_ranks(all_fights, all_ranks):
-    k = 201 # this is arbitrary, and can be changed
+    k = 101 # this is arbitrary, and can be changed
     for fight in reversed(all_fights):
         # fight[3] is not needed (result of opponent, which can be determined by result of the fighter_one)
         fighter_one = fight[0]
@@ -91,8 +93,8 @@ def update_ranks(all_fights, all_ranks):
             if not weight_class in fighter_one_data:
                 fighter_one_data.append(weight_class)
         else:
-            fighter_one_pos = update_ordered_list_position(-1, 1000, fighter_one)
-            fighter_one_data = ["1000", str(fighter_one_pos), weight_class]
+            # fighter_one_pos = update_ordered_list_position(-1, 1000, fighter_one)
+            fighter_one_data = ["1000", weight_class]
             all_ranks[fighter_one] = fighter_one_data
 
         if fighter_two in all_ranks:
@@ -100,8 +102,8 @@ def update_ranks(all_fights, all_ranks):
             if not weight_class in fighter_two_data:
                 fighter_two_data.append(weight_class)
         else:
-            fighter_two_pos = update_ordered_list_position(-1, 1000, fighter_two)
-            fighter_two_data = ["1000", str(fighter_two_pos), weight_class]
+            # fighter_two_pos = update_ordered_list_position(-1, 1000, fighter_two)
+            fighter_two_data = ["1000", weight_class]
             all_ranks[fighter_two] = fighter_two_data
 
         # rank change formula
@@ -124,8 +126,8 @@ def update_ranks(all_fights, all_ranks):
         all_ranks[fighter_one][0] = str(fighter_one_new_rank)
         all_ranks[fighter_two][0] = str(fighter_two_new_rank)
 
-        update_ordered_list_position(int(fighter_one_data[1]), fighter_one_new_rank, fighter_one)
-        update_ordered_list_position(int(fighter_two_data[1]), fighter_two_new_rank, fighter_two)
+        # update_ordered_list_position(int(fighter_one_data[1]), fighter_one_new_rank, fighter_one)
+        # update_ordered_list_position(int(fighter_two_data[1]), fighter_two_new_rank, fighter_two)
 
         # updating rank peak
         if fighter_one_new_rank > int(peak_rank[0]):
@@ -134,6 +136,10 @@ def update_ranks(all_fights, all_ranks):
 
     return all_ranks
 
+def update_list_pos():
+    print("not active")
+
+"""
 def update_ordered_list_position(old_pos, new_rank, name):
     # if list is empty
     if len(ordered_list) == 0:
@@ -159,8 +165,9 @@ def update_ordered_list_position(old_pos, new_rank, name):
     ordered_list.insert(old_pos, [str(new_rank), name])
     temp_pos = old_pos
     while temp_pos < len(ordered_list):
-        
+
     return old_pos
+"""
 
 def save_data():
     f = open(current_path + "/rank_data/rank_data.txt", "w")
