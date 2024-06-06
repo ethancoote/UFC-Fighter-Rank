@@ -9,8 +9,9 @@ def rank_sim(fight_list_filename, fighter_rank_filename):
     all_fights = get_fights_data(fight_list_filename)
     all_ranks = get_ranks_data(fighter_rank_filename)
     get_stats(current_path + "/rank_data/rank_data.txt")
-    ordered_list = get_ordered_list(current_path + "/rank_data/ordered_list.txt")
+    # get_ordered_list(current_path + "/rank_data/ordered_list.txt")
     all_ranks = update_ranks(all_fights, all_ranks)
+    set_ordered_list()
     print(all_ranks)
     print(peak_rank)
 
@@ -76,8 +77,6 @@ def get_ordered_list(filename):
         split_line = line.split("-")
         ordered_list.append(split_line)
 
-    return ordered_list
-
 def update_ranks(all_fights, all_ranks):
     k = 101 # this is arbitrary, and can be changed
     for fight in reversed(all_fights):
@@ -136,8 +135,13 @@ def update_ranks(all_fights, all_ranks):
 
     return all_ranks
 
-def update_list_pos():
+def set_ordered_list():
+    dict_sorting(ordered_list)
     print("not active")
+
+def dict_sorting():
+    for item in ordered_list:
+        
 
 """
 def update_ordered_list_position(old_pos, new_rank, name):
