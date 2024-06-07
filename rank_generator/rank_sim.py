@@ -2,16 +2,16 @@
 import os
 
 peak_rank = ['0', '']
-ordered_list = []
 current_path = os.path.dirname(os.path.abspath(__file__))
 
 def rank_sim(fight_list_filename, fighter_rank_filename):
+    ordered_list = []
     all_fights = get_fights_data(fight_list_filename)
     all_ranks = get_ranks_data(fighter_rank_filename)
     get_stats(current_path + "/rank_data/rank_data.txt")
     # get_ordered_list(current_path + "/rank_data/ordered_list.txt")
     all_ranks = update_ranks(all_fights, all_ranks)
-    set_ordered_list()
+    set_ordered_list(ordered_list)
     print(all_ranks)
     print(peak_rank)
 
@@ -136,12 +136,23 @@ def update_ranks(all_fights, all_ranks):
     return all_ranks
 
 def set_ordered_list():
-    dict_sorting(ordered_list)
+    list_sorting(ordered_list)
     print("not active")
 
-def dict_sorting():
-    for item in ordered_list:
-        
+def list_sorting(ordered_list):
+    low = 0
+    high = len(ordered_list) - 1
+    
+
+def partition(ordered_list, low, high):
+    pivot = ordered_list[high]
+    i = low - 1
+    for j in range(low, high):
+        if ordered_list[j] < pivot:
+            i = i + 1
+            temp = ordered_list[i]
+            ordered_list[i] = ordered_list[j]
+            ordered_list[j] = temp
 
 """
 def update_ordered_list_position(old_pos, new_rank, name):
@@ -173,7 +184,7 @@ def update_ordered_list_position(old_pos, new_rank, name):
     return old_pos
 """
 
-def save_data():
+def save_data(ordered_list):
     f = open(current_path + "/rank_data/rank_data.txt", "w")
     f.write(f"Peak-{peak_rank[0]}-{peak_rank[1]}")
     f.close()
