@@ -27,7 +27,7 @@ def get_fights_data(filename):
     
     for line in f:
         line = line.strip()
-        split_line = line.split("-")
+        split_line = line.split("---")
         all_data.append(split_line)
 
     return all_data
@@ -42,7 +42,7 @@ def get_ranks_data(filename):
     
     for line in f:
         line = line.strip()
-        split_line = line.split("-")
+        split_line = line.split("---")
         name = split_line[0]
         split_line.pop(0)
         all_data[name] = split_line
@@ -77,13 +77,13 @@ def get_ordered_list(filename):
     
     for line in f:
         line = line.strip()
-        split_line = line.split("-")
+        split_line = line.split("---")
         ordered_list.append(split_line)
     
     return ordered_list
 
 def update_ranks(all_fights, all_ranks):
-    k = 101 # this is arbitrary, and can be changed
+    k = 201 # this is arbitrary, and can be changed
     for fight in reversed(all_fights):
         # fight[3] is not needed (result of opponent, which can be determined by result of the fighter_one)
         fighter_one = fight[0]
@@ -178,12 +178,12 @@ def init_list_from_dict(list, dict):
 
 def save_data(ordered_list):
     f = open(current_path + "/rank_data/rank_data.txt", "w")
-    f.write(f"Peak-{peak_rank[0]}-{peak_rank[1]}")
+    f.write(f"Peak---{peak_rank[0]}---{peak_rank[1]}")
     f.close()
 
     f = open(current_path + "/rank_data/ordered_list.txt", "w")
     for fighter in reversed(ordered_list):
-        f.write(f"{fighter[0]}-{fighter[1]}\n")
+        f.write(f"{fighter[0]}---{fighter[1]}\n")
 
     f.close()
 

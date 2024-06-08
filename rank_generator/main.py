@@ -11,12 +11,12 @@ def run_init():
 
     f = open(current_path + "/fighter_data/fighter_data.txt", "w")
     for fight in results:
-        f.write(f"{fight[0]}-{fight[1]}-{fight[2]}-{fight[3]}-{fight[4]}\n")
+        f.write(f"{fight[0]}---{fight[1]}---{fight[2]}---{fight[3]}---{fight[4]}\n")
 
 def run_rank_sim():
-    rank_sim.rank_sim(current_path + "/fighter_data/fighter_data_test_sample.txt", current_path + "/rank_data/fighter_rank.txt")
+    rank_sim.rank_sim(current_path + "/fighter_data/fighter_data_saved.txt", current_path + "/rank_data/fighter_rank.txt")
     
 
-# run_init()
+run_init()
 run_rank_sim()
 
