@@ -17,6 +17,6 @@ def run_rank_sim():
     rank_sim.rank_sim(current_path + "/fighter_data/fighter_data_saved.txt", current_path + "/rank_data/fighter_rank.txt")
     
 
-run_init()
+# run_init()
 run_rank_sim()
 
