@@ -11,9 +11,11 @@ def rank_sim(fight_list_filename, fighter_rank_filename):
     get_stats(current_path + "/rank_data/rank_data.txt")
     # get_ordered_list(current_path + "/rank_data/ordered_list.txt")
     all_ranks = update_ranks(all_fights, all_ranks)
-    set_ordered_list(ordered_list)
-    print(all_ranks)
-    print(peak_rank)
+    ordered_list = init_list_from_dict(ordered_list, all_ranks)
+    ordered_list = set_ordered_list(ordered_list)
+    save_data(ordered_list)
+    # print(all_ranks)
+    # print(peak_rank)
 
 def get_fights_data(filename):
     all_data = []
@@ -66,6 +68,7 @@ def get_stats(filename):
     return 0
 
 def get_ordered_list(filename):
+    ordered_list = []
     try:
         f = open(filename, "r")
     except:
@@ -76,6 +79,8 @@ def get_ordered_list(filename):
         line = line.strip()
         split_line = line.split("-")
         ordered_list.append(split_line)
+    
+    return ordered_list
 
 def update_ranks(all_fights, all_ranks):
     k = 101 # this is arbitrary, and can be changed
@@ -125,9 +130,6 @@ def update_ranks(all_fights, all_ranks):
         all_ranks[fighter_one][0] = str(fighter_one_new_rank)
         all_ranks[fighter_two][0] = str(fighter_two_new_rank)
 
-        # update_ordered_list_position(int(fighter_one_data[1]), fighter_one_new_rank, fighter_one)
-        # update_ordered_list_position(int(fighter_two_data[1]), fighter_two_new_rank, fighter_two)
-
         # updating rank peak
         if fighter_one_new_rank > int(peak_rank[0]):
             peak_rank[0] = str(fighter_one_new_rank)
@@ -135,54 +137,45 @@ def update_ranks(all_fights, all_ranks):
 
     return all_ranks
 
-def set_ordered_list():
-    list_sorting(ordered_list)
-    print("not active")
-
-def list_sorting(ordered_list):
+def set_ordered_list(list):
+    print(list)
     low = 0
-    high = len(ordered_list) - 1
-    
+    high = len(list) - 1
+    list = quick_sort(list, low, high)
+    return list
 
-def partition(ordered_list, low, high):
-    pivot = ordered_list[high]
+def partition(list, low, high):
+    pivot = int(list[high][1])
     i = low - 1
     for j in range(low, high):
-        if ordered_list[j] < pivot:
+        if int(list[j][1]) < pivot:
             i = i + 1
-            temp = ordered_list[i]
-            ordered_list[i] = ordered_list[j]
-            ordered_list[j] = temp
-
-"""
-def update_ordered_list_position(old_pos, new_rank, name):
-    # if list is empty
-    if len(ordered_list) == 0:
-        ordered_list.append([str(new_rank), name])
-        return old_pos
+            temp = list[i]
+            list[i] = list[j]
+            list[j] = temp
     
-    # if the fighter is already in the list
-    if not old_pos == -1:
-        old_rank = int(ordered_list[old_pos][0])
-        del ordered_list[old_pos]
-    else:
-        old_rank = 1000000
-        old_pos = 0
-    
-    if new_rank > old_rank:
-        while old_pos > 0 and new_rank < int(ordered_list[old_pos][0]):
-            old_pos -= 1
-    elif new_rank < old_rank:
-        while old_pos < len(ordered_list) and new_rank > int(ordered_list[old_pos][0]):
-            print(old_pos)
-            old_pos += 1
+    i += 1
+    temp = list[i]
+    list[i] = list[j]
+    list[j] = temp
 
-    ordered_list.insert(old_pos, [str(new_rank), name])
-    temp_pos = old_pos
-    while temp_pos < len(ordered_list):
+    return i
 
-    return old_pos
-"""
+def quick_sort(list, low, high):
+    if low < high:
+        pi = partition(list, low, high)
+
+        list = quick_sort(list, low, pi - 1)
+
+        list = quick_sort(list, pi + 1, high)
+
+    return list
+
+def init_list_from_dict(list, dict):
+    for item in dict:
+        list.append([item, dict[item][0]])
+
+    return list
 
 def save_data(ordered_list):
     f = open(current_path + "/rank_data/rank_data.txt", "w")
@@ -191,7 +184,7 @@ def save_data(ordered_list):
 
     f = open(current_path + "/rank_data/ordered_list.txt", "w")
     for fighter in ordered_list:
-        f.write(f"{fighter[0]}-{fighter[1]}")
+        f.write(f"{fighter[0]}-{fighter[1]}\n")
 
     f.close()
 
