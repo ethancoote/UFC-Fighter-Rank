@@ -138,7 +138,6 @@ def update_ranks(all_fights, all_ranks):
     return all_ranks
 
 def set_ordered_list(list):
-    print(list)
     low = 0
     high = len(list) - 1
     list = quick_sort(list, low, high)
@@ -154,16 +153,16 @@ def partition(list, low, high):
             list[i] = list[j]
             list[j] = temp
     
-    i += 1
+    i = i + 1
     temp = list[i]
-    list[i] = list[j]
-    list[j] = temp
+    list[i] = list[high]
+    list[high] = temp
 
-    return i
+    return i, list
 
 def quick_sort(list, low, high):
     if low < high:
-        pi = partition(list, low, high)
+        pi, list = partition(list, low, high)
 
         list = quick_sort(list, low, pi - 1)
 
@@ -183,7 +182,7 @@ def save_data(ordered_list):
     f.close()
 
     f = open(current_path + "/rank_data/ordered_list.txt", "w")
-    for fighter in ordered_list:
+    for fighter in reversed(ordered_list):
         f.write(f"{fighter[0]}-{fighter[1]}\n")
 
     f.close()
