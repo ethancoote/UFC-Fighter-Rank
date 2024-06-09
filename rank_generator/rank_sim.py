@@ -83,7 +83,7 @@ def get_ordered_list(filename):
     return ordered_list
 
 def update_ranks(all_fights, all_ranks):
-    k = 32 # this is arbitrary, and can be changed
+    k = 64 # this is arbitrary, and can be changed
     for fight in reversed(all_fights):
         # fight[3] is not needed (result of opponent, which can be determined by result of the fighter_one)
         fighter_one = fight[0]
