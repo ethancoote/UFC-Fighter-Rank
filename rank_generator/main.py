@@ -7,7 +7,7 @@ current_path = os.path.dirname(os.path.abspath(__file__))
 
 def run_init():
     # results = stat_scraper.init_dataset()
-    results = stat_scraper.get_event_results("http://www.ufcstats.com/event-details/6420efac0578988b")
+    results = stat_scraper.get_event_results("http://www.ufcstats.com/event-details/cba3a2dfbc06ce79")
 
     f = open(current_path + "/fighter_data/fighter_data.txt", "w")
     for fight in results:
