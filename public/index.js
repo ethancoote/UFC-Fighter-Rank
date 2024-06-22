@@ -31,7 +31,7 @@ PetiteVue.createApp({
 }).mount("#body");
 
 let data = [];
-fetch("../rank_generator/rank_data/rankings.json")
+fetch("/data/rankings.json")
 .then(function(res){
     return res.json();
 })
