@@ -1,5 +1,6 @@
 # Takes all UFC fights in order and give each fighter a ranking
 import os
+import json
 
 peak_rank = ['0', '']
 current_path = os.path.dirname(os.path.abspath(__file__))
@@ -181,9 +182,16 @@ def save_data(ordered_list):
     f.write(f"Peak---{peak_rank[0]}---{peak_rank[1]}")
     f.close()
 
-    f = open(current_path + "/rank_data/ordered_list.txt", "w")
+    f = open(current_path + "/rank_data/rankings.json", "w")
+    i = 1
+    
+    json_list = []
     for fighter in reversed(ordered_list):
-        f.write(f"{fighter[0]}---{fighter[1]}\n")
-
+        temp_dict = {"rank": str(i), "name": fighter[0], "rating": fighter[1]}
+        json_list.append(temp_dict)
+        #f.write(f"{fighter[0]}---{fighter[1]}\n")
+        i += 1
+    json_data = json.dumps(json_list, indent=4)
+    f.write(json_data)
     f.close()
 
