@@ -23,22 +23,37 @@ const analytics = getAnalytics(app);
 
 PetiteVue.createApp({
     search: '',
-    
+    fighters: [],
+    get onLoad() {
+        fetch("/data/rankings.json")
+        .then(res => res.json())
+        .then(products => {
+            console.log(products)
+            this.fighters = products
+        })
+    },
     onChange() {
-        update_list(this.search);
+        //update_list(this.search);
+        console.log("update");
     }
     
 }).mount("#body");
 
+
+/*
+function onLoad() {
+    fetch("/data/rankings.json")
+    .then(res => res.json())
+    .then(products => {
+        console.log(products)
+        return {
+            $tableBody: '#table-body-0',
+            fighters: products
+        }
+    })  
+}*/
 let data = [];
-fetch("/data/rankings.json")
-.then(function(res){
-    return res.json();
-})
-.then(function(products){
-    data = products;
-    update_list('');
-})
+
     
 function update_list(filter_string) {
     let placeholder = document.querySelector("#table-body-0");

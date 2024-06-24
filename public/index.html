@@ -57,7 +57,12 @@
                                 <th>Rating</th>
                             </tr>
                         </thead>
-                        <tbody id="table-body-0">
+                        <tbody id="table-body-0" v-for="fighter in fighters">
+                            <tr>
+                                <td>{{fighter.rank}}</td>
+                                <td>{{fighter.name}}</td>
+                                <td>{{fighter.rating}}</td>
+                            </tr>
                             <!-- Populated from data file -->
                         </tbody>
                     </table>
