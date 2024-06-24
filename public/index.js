@@ -24,51 +24,24 @@ const analytics = getAnalytics(app);
 PetiteVue.createApp({
     search: '',
     fighters: [],
+    allFighters: [],
     get onLoad() {
         fetch("/data/rankings.json")
         .then(res => res.json())
         .then(products => {
-            console.log(products)
-            this.fighters = products
+            this.fighters = products;
+            this.allFighters = products;
         })
     },
     onChange() {
-        //update_list(this.search);
-        console.log("update");
+        let tempFighters = []
+        for (let fighter of this.allFighters) {
+            if (fighter.name.toLowerCase().includes(this.search.toLowerCase())){
+                tempFighters.push(fighter);
+            }
+        }
+        this.fighters = tempFighters;
     }
     
 }).mount("#body");
 
-
-/*
-function onLoad() {
-    fetch("/data/rankings.json")
-    .then(res => res.json())
-    .then(products => {
-        console.log(products)
-        return {
-            $tableBody: '#table-body-0',
-            fighters: products
-        }
-    })  
-}*/
-let data = [];
-
-    
-function update_list(filter_string) {
-    let placeholder = document.querySelector("#table-body-0");
-    let out = "";
-    let filtered_data = data;
-    for(let product of filtered_data){
-        if (product.name.toLowerCase().includes(filter_string.toLowerCase()) || filter_string == '') {
-            out += `
-            <tr>
-                <td>${product.rank}</td>
-                <td>${product.name}</td>
-                <td>${product.rating}</td>
-            </tr>
-            `;
-        }
-    }
-    placeholder.innerHTML = out;
-}
