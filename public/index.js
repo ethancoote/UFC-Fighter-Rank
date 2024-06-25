@@ -25,6 +25,7 @@ PetiteVue.createApp({
     search: '',
     fighters: [],
     allFighters: [],
+    weightSelect: "",
     get onLoad() {
         fetch("/data/rankings.json")
         .then(res => res.json())
@@ -41,7 +42,11 @@ PetiteVue.createApp({
             }
         }
         this.fighters = tempFighters;
+    }, 
+    onWeightChange() {
+        console.log("change");
     }
     
 }).mount("#body");
+
 

@@ -175,8 +175,16 @@ def quick_sort(list, low, high):
 
 def init_list_from_dict(list, dict):
     for item in dict:
-        list.append([item, dict[item][0]])
-
+        if len(dict[item]) == 2:
+            list.append([item, dict[item][0], [dict[item][1]]])
+        elif len(dict[item]) == 3:
+            list.append([item, dict[item][0], [dict[item][1], dict[item][2]]])
+        elif len(dict[item]) == 4:
+            list.append([item, dict[item][0], [dict[item][1], dict[item][2], dict[item][3]]])
+        elif len(dict[item]) == 5:
+            list.append([item, dict[item][0], [dict[item][1], dict[item][2], dict[item][3], dict[item][4]]])
+        else:
+            print("list read error")
     return list
 
 def save_data(ordered_list):
@@ -189,7 +197,7 @@ def save_data(ordered_list):
     
     json_list = []
     for fighter in reversed(ordered_list):
-        temp_dict = {"rank": str(i), "name": fighter[0], "rating": fighter[1]}
+        temp_dict = {"rank": str(i), "name": fighter[0], "rating": fighter[1], "weight": fighter[2]}
         json_list.append(temp_dict)
         i += 1
     json_data = json.dumps(json_list, indent=4)

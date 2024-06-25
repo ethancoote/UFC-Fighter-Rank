@@ -33,12 +33,12 @@
     
         <div class="form-outline" style="width: 500px; align-items: center; display: flex; margin: 0 auto" data-mdb-input-init>
             <input v-model="search" id="search-form-1" class="form-control" placeholder="Search Players" @input="onChange"></input>
-            <div class="dropright">
+            <div class="dropright" v-model="weightSelect" @change="onWeightChange">
                 <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="weightDropdown">
                     Weight Class
                 </button>
-                <ul class="dropdown-menu" aria-labelledby="weightDropdown">
-                    <li><a class="dropdown-item" href="#all">All Fighters</a></li>
+                <ul class="dropdown-menu" aria-labelledby="weightDropdown" >
+                    <li><a class="dropdown-item" value="#all">All Fighters</a></li>
                     <li><a class="dropdown-item" href="#men">All Men</a></li>
                     <li><a class="dropdown-item" href="#women">All Women</a></li>
                     <div class="dropdown-divider"></div>
