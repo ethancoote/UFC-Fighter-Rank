@@ -48,35 +48,45 @@ PetiteVue.createApp({
     }, 
     onWeightChange(weightClass) {
         let tempFighters = [];
+        this.fighters = [];
         if (weightClass != 'all') {
             
             tempFighters = [];
             if (weightClass == 'men'){
+                let i = 1;
                 for (let fighter of this.allFighters) {
                     if (!fighter.weight.includes("Women's Featherweight") &&
                         !fighter.weight.includes("Women's Batamweight") &&
                         !fighter.weight.includes("Women's Flyweight") &&
                         !fighter.weight.includes("Women's Strawweight"))
                     {
+                        fighter.rank = i;
                         tempFighters.push(fighter)
+                        i += 1;
                     }
                 }
                 weightClass = "All Men" 
             } else if (weightClass == 'women'){
+                let i = 1;
                 for (let fighter of this.allFighters) {
                     if (fighter.weight.includes("Women's Featherweight") ||
                         fighter.weight.includes("Women's Batamweight") ||
                         fighter.weight.includes("Women's Flyweight") ||
                         fighter.weight.includes("Women's Strawweight"))
                     {
+                        fighter.rank = i;
                         tempFighters.push(fighter)
+                        i += 1;
                     }
                 }
                 weightClass = "All Women" 
             } else {
+                let i = 1;
                 for (let fighter of this.allFighters) {
                     if (fighter.weight.includes(weightClass)){
+                        fighter.rank = i;
                         tempFighters.push(fighter)
+                        i += 1;
                     }
                 }
             }
