@@ -25,6 +25,7 @@ PetiteVue.createApp({
     search: '',
     fighters: [],
     allFighters: [],
+    searchFighters: [],
     weightSelect: "",
     get onLoad() {
         fetch("/data/rankings.json")
@@ -32,29 +33,57 @@ PetiteVue.createApp({
         .then(products => {
             this.fighters = products;
             this.allFighters = products;
+            this.searchFighters = products;
         })
     },
-    onChange(weightClass) {
+    onChange() {
         let tempFighters = [];
-        for (let fighter of this.allFighters) {
+        for (let fighter of this.searchFighters) {
             if (fighter.name.toLowerCase().includes(this.search.toLowerCase())){
                 tempFighters.push(fighter);
-            }
-        }
-        if (weightClass != '') {
-            let newTempFighters = tempFighters;
-            tempFighters = [];
-            for (let fighter of newTempFighters) {
-                if (fighter.weight.includes(weightClass)){
-                    tempFighters.push(fighter)
-                }
             }
         }
         this.fighters = tempFighters;
     }, 
     onWeightChange(weightClass) {
-        console.log(weightClass);
-        this.onChange(weightClass);
+        let tempFighters = [];
+        if (weightClass != 'all') {
+            
+            tempFighters = [];
+            if (weightClass == 'men'){
+                for (let fighter of this.allFighters) {
+                    if (!fighter.weight.includes("Women's Featherweight") &&
+                        !fighter.weight.includes("Women's Batamweight") &&
+                        !fighter.weight.includes("Women's Flyweight") &&
+                        !fighter.weight.includes("Women's Strawweight"))
+                    {
+                        tempFighters.push(fighter)
+                    }
+                }
+            } else if (weightClass == 'women'){
+                for (let fighter of this.allFighters) {
+                    if (fighter.weight.includes("Women's Featherweight") ||
+                        fighter.weight.includes("Women's Batamweight") ||
+                        fighter.weight.includes("Women's Flyweight") ||
+                        fighter.weight.includes("Women's Strawweight"))
+                    {
+                        tempFighters.push(fighter)
+                    }
+                }
+            } else {
+                for (let fighter of this.allFighters) {
+                    if (fighter.weight.includes(weightClass)){
+                        tempFighters.push(fighter)
+                    }
+                }
+            }
+            this.fighters = tempFighters;
+            this.searchFighters = tempFighters;
+        } else {
+            this.fighters = this.allFighters;
+            this.searchFighters = this.allFighters;
+        }
+        
     }
     
 }).mount("#body");
