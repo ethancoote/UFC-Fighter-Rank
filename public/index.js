@@ -34,17 +34,27 @@ PetiteVue.createApp({
             this.allFighters = products;
         })
     },
-    onChange() {
-        let tempFighters = []
+    onChange(weightClass) {
+        let tempFighters = [];
         for (let fighter of this.allFighters) {
             if (fighter.name.toLowerCase().includes(this.search.toLowerCase())){
                 tempFighters.push(fighter);
             }
         }
+        if (weightClass != '') {
+            let newTempFighters = tempFighters;
+            tempFighters = [];
+            for (let fighter of newTempFighters) {
+                if (fighter.weight.includes(weightClass)){
+                    tempFighters.push(fighter)
+                }
+            }
+        }
         this.fighters = tempFighters;
     }, 
-    onWeightChange() {
-        console.log("change");
+    onWeightChange(weightClass) {
+        console.log(weightClass);
+        this.onChange(weightClass);
     }
     
 }).mount("#body");

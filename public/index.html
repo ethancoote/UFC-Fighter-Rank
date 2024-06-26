@@ -32,29 +32,29 @@
         <h4 style="text-align: center; padding-top: 50px;"><b>MMA Rank</b></h1>
     
         <div class="form-outline" style="width: 500px; align-items: center; display: flex; margin: 0 auto" data-mdb-input-init>
-            <input v-model="search" id="search-form-1" class="form-control" placeholder="Search Players" @input="onChange"></input>
-            <div class="dropright" v-model="weightSelect" @change="onWeightChange">
-                <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="weightDropdown">
+            <input v-model="search" id="search-form-1" class="form-control" placeholder="Search Players" @input="onChange('')"></input>
+            <div class="dropright" >
+                <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="weightDropdown"  >
                     Weight Class
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="weightDropdown" >
-                    <li><a class="dropdown-item" value="#all">All Fighters</a></li>
-                    <li><a class="dropdown-item" href="#men">All Men</a></li>
-                    <li><a class="dropdown-item" href="#women">All Women</a></li>
+                    <li class="dropdown-item" @click="onWeightChange('all')">All Fighters</li>
+                    <li class="dropdown-item" @click="onWeightChange('men')">All Men</li>
+                    <li class="dropdown-item" @click="onWeightChange('women')">All Women</li>
                     <div class="dropdown-divider"></div>
-                    <li><a class="dropdown-item" href="#heavyweight">Heavyweight</a></li>
-                    <li><a class="dropdown-item" href="#lightheavyweight">Light Heavyweight</a></li>
-                    <li><a class="dropdown-item" href="#middleweight">Middleweight</a></li>
-                    <li><a class="dropdown-item" href="#welterweight">Welterweight</a></li>
-                    <li><a class="dropdown-item" href="#lightweight">Lightweight</a></li>
-                    <li><a class="dropdown-item" href="#featherweight">Featherweight</a></li>
-                    <li><a class="dropdown-item" href="#bantamweight">Bantamweight</a></li>
-                    <li><a class="dropdown-item" href="#flyweight">Flyweight</a></li>
+                    <li class="dropdown-item" @click="onWeightChange('Heavyweight')">Heavyweight</li>
+                    <li class="dropdown-item" @click="onWeightChange('Light Heavyweight')">Light Heavyweight</li>
+                    <li class="dropdown-item" @click="onWeightChange('Middleweight')">Middleweight</li>
+                    <li class="dropdown-item" @click="onWeightChange('Welterweight')">Welterweight</li>
+                    <li class="dropdown-item" @click="onWeightChange('Lightweight')">Lightweight</li>
+                    <li class="dropdown-item" @click="onWeightChange('Featherweight')">Featherweight</li>
+                    <li class="dropdown-item" @click="onWeightChange('Bantamweight')">Bantamweight</li>
+                    <li class="dropdown-item" @click="onWeightChange('Flyweight')">Flyweight</li>
                     <div class="dropdown-divider"></div>
-                    <li><a class="dropdown-item" href="#wfeatherweight">Women's Featherweight</a></li>
-                    <li><a class="dropdown-item" href="#wbantamweight">Women's Bantamweight</a></li>
-                    <li><a class="dropdown-item" href="#wflyweight">Women's Flyweight</a></li>
-                    <li><a class="dropdown-item" href="#wstrawweight">Women's Strawweight</a></li>
+                    <li class="dropdown-item" @click="onWeightChange(`Women's Featherweight`)">Women's Featherweight</li>
+                    <li class="dropdown-item" @click="onWeightChange(`Women's Bantamweight`)">Women's Bantamweight</li>
+                    <li class="dropdown-item" @click="onWeightChange(`Women's Flyweight`)">Women's Flyweight</li>
+                    <li class="dropdown-item" @click="onWeightChange(`Women's Strawweight`)">Women's Strawweight</li>
                 </ul>
             </div>
             
