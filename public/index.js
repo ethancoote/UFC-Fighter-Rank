@@ -23,6 +23,7 @@ const analytics = getAnalytics(app);
 
 PetiteVue.createApp({
     search: '',
+    weight: 'All Fighters',
     fighters: [],
     allFighters: [],
     searchFighters: [],
@@ -60,6 +61,7 @@ PetiteVue.createApp({
                         tempFighters.push(fighter)
                     }
                 }
+                weightClass = "All Men" 
             } else if (weightClass == 'women'){
                 for (let fighter of this.allFighters) {
                     if (fighter.weight.includes("Women's Featherweight") ||
@@ -70,6 +72,7 @@ PetiteVue.createApp({
                         tempFighters.push(fighter)
                     }
                 }
+                weightClass = "All Women" 
             } else {
                 for (let fighter of this.allFighters) {
                     if (fighter.weight.includes(weightClass)){
@@ -79,9 +82,11 @@ PetiteVue.createApp({
             }
             this.fighters = tempFighters;
             this.searchFighters = tempFighters;
+            this.weight = weightClass;
         } else {
             this.fighters = this.allFighters;
             this.searchFighters = this.allFighters;
+            this.weight = "All Fighters";
         }
         
     }
