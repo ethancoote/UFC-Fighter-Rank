@@ -9,6 +9,7 @@
             integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" 
             crossorigin="anonymous"
         />
+        <link rel="stylesheet" href="style.css"/>
 
         <title>MMA Rank</title>
     </head>
@@ -62,7 +63,7 @@
         </div>
         
         <div class="container" style="display: flex; align-items: center;">
-            <form style="margin: 0 auto;">
+            <form style="margin: 0 auto; border-style: solid; border-width: 1px; border-color: rgb(214, 214, 214); border-left: 0cap; border-right: 0cap; border-top: 0cap;" >
                 <div class="table-responsive" style="height: 500px; width: 500px;">
                     <table class="table table-striped">
                         <thead class="table-dark" style="position: sticky; top: 0;">
@@ -72,7 +73,7 @@
                                 <th>Rating</th>
                             </tr>
                         </thead>
-                        <tbody id="table-body-0" >
+                        <tbody id="table-body-0">
                             <template v-for="fighter in fighters">
                                 <tr>
                                     <td>{{fighter.rank}}</td>
@@ -85,8 +86,16 @@
                     </table>
                 </div>
             </form>
+            
         </div>
-        <br>
+        <div class="container" style="width: 523px; display: flex; justify-content: flex-start;">
+                <ul class="pagination">
+                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item page-next"><a class="page-link" href="#">Next</a></li>
+                </ul>
+        </div>
+
         <p style="text-align: center;">MMA Rank currently only uses <a href="http://www.ufcstats.com/statistics/events/completed?page=all">UFC fight data</a>.</p>
         <p style="text-align: center;">More information about the data collection process can be found <a href="info.html">here</a>.</p>
 

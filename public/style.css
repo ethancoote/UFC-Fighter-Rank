@@ -1,0 +1,10 @@
+.pagination > li > a
+{
+    background-color: white;
+    color: #212529;
+    border-color: white;
+}
+
+* {
+    border-radius: 0 !important;
+}
