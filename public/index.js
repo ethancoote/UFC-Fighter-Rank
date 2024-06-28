@@ -52,7 +52,6 @@ PetiteVue.createApp({
     updateTotalPages() {
         let len = this.searchFighters.length;
         let pages = Math.ceil(len / this.pageLimit);
-        console.log(pages);
         this.totalPages = pages;
     },
     onChange() {
@@ -76,7 +75,23 @@ PetiteVue.createApp({
         }
         this.fighters = tempFighters;
     }, 
+    changePage(newPage) {
+        this.page = newPage;
+        let i = this.page - 1;
+        i = i * this.pageLimit;
+        i += 1;
+        let limit = i + this.pageLimit;
+        let tempFighters = [];
+        this.fighters = [];
+        while (i <= ( limit ) && i <= this.searchFighters.length){
+            let tempFighter = this.searchFighters[i - 1];
+            tempFighters.push(tempFighter);
+            i += 1;
+        }
+        this.fighters = tempFighters;
+    },
     onWeightChange(weightClass) {
+        this.page = 1;
         let tempFighters = [];
         let fighterLimit = [];
         this.fighters = [];
@@ -140,9 +155,11 @@ PetiteVue.createApp({
         } else {
 
             for (let fighter of this.allFighters) {
-                tempFighters.push(fighter);
+                let tempFighter = fighter;
+                tempFighter.rank = i;
+                tempFighters.push(tempFighter);
                 if (i <= (this.pageLimit * this.page)) {
-                    fighterLimit.push(fighter);
+                    fighterLimit.push(tempFighter);
                 }
                 i += 1;
             }
@@ -151,7 +168,6 @@ PetiteVue.createApp({
             this.weight = "All Fighters";
         }
         this.updateTotalPages();
-        
     }
     
 }).mount("#body");
