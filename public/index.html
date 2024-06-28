@@ -33,7 +33,7 @@
         <h1 style="text-align: center; padding-top: 50px;"><b>MMA Rank</b></h1>
         <h4 style="text-align: center;">{{ weight }}</h4>
     
-        <div class="form-outline" style="width: 600px; align-items: center; display: flex; margin: 0 auto" data-mdb-input-init>
+        <div class="form-outline" style="width: 650px; align-items: center; display: flex; margin: 0 auto" data-mdb-input-init>
             <input v-model="search" id="search-form-1" class="form-control" placeholder="Search Fighters" @input="onChange()"></input>
             <div class="dropright" >
                 <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="weightDropdown"  >
@@ -64,11 +64,11 @@
         
         <div class="container" style="display: flex; align-items: center;">
             <form style="margin: 0 auto; border-style: solid; border-width: 1px; border-color: rgb(214, 214, 214); border-left: 0cap; border-right: 0cap; border-top: 0cap;" >
-                <div class="table-responsive" style="height: 500px; width: 600px;">
+                <div class="table-responsive" style="height: 500px; width:650px;">
                     <table class="table table-striped">
                         <thead class="table-dark" style="position: sticky; top: 0;">
                             <tr>
-                                <th style="width: 80px;">Rank</th>
+                                <th style="width: 90px;">Rank</th>
                                 <th style="width: 400px;">Name</th>
                                 <th>Rating</th>
                             </tr>
@@ -88,10 +88,10 @@
             </form>
             
         </div>
-        <div class="container" style="width: 623px; display: flex; justify-content: flex-start;">
-                <ul class="pagination">
+        <div class="container" style="width: 673px; display: flex; justify-content: flex-start;">
+                <ul class="pagination" >
                     <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item" v-for="n in totalPages"><a class="page-link" href="#">{{ n }}</a></li>
                     <li class="page-item page-next"><a class="page-link" href="#">Next</a></li>
                 </ul>
         </div>

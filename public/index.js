@@ -30,6 +30,7 @@ PetiteVue.createApp({
     weightSelect: "",
     page: 1,
     pageLimit: 200,
+    totalPages: 1,
     get onLoad() {
         fetch("/data/rankings.json")
         .then(res => res.json())
@@ -45,7 +46,14 @@ PetiteVue.createApp({
             }
             this.allFighters = products;
             this.searchFighters = products;
+            this.updateTotalPages();
         })
+    }, 
+    updateTotalPages() {
+        let len = this.searchFighters.length;
+        let pages = Math.ceil(len / this.pageLimit);
+        console.log(pages);
+        this.totalPages = pages;
     },
     onChange() {
         let tempFighters = [];
@@ -60,6 +68,11 @@ PetiteVue.createApp({
                     break;
                 }
             }
+        }
+        if (this.search == "") {
+            this.updateTotalPages();
+        } else {
+            this.totalPages = 1;
         }
         this.fighters = tempFighters;
     }, 
@@ -137,6 +150,7 @@ PetiteVue.createApp({
             this.searchFighters = tempFighters;
             this.weight = "All Fighters";
         }
+        this.updateTotalPages();
         
     }
     
