@@ -28,74 +28,113 @@ PetiteVue.createApp({
     allFighters: [],
     searchFighters: [],
     weightSelect: "",
+    page: 1,
+    pageLimit: 200,
     get onLoad() {
         fetch("/data/rankings.json")
         .then(res => res.json())
         .then(products => {
-            this.fighters = products;
+            let i = 1;
+            for (let product of products) {
+                if (i <= this.pageLimit) {
+                    this.fighters.push(product);
+                } else {
+                    break;
+                }
+                i += 1;
+            }
             this.allFighters = products;
             this.searchFighters = products;
         })
     },
     onChange() {
         let tempFighters = [];
+        this.page = 1;
+        let i = 1;
         for (let fighter of this.searchFighters) {
             if (fighter.name.toLowerCase().includes(this.search.toLowerCase())){
-                tempFighters.push(fighter);
+                if (i <= this.pageLimit) {
+                    tempFighters.push(fighter);
+                    i += 1;
+                } else {
+                    break;
+                }
             }
         }
         this.fighters = tempFighters;
     }, 
     onWeightChange(weightClass) {
         let tempFighters = [];
+        let fighterLimit = [];
         this.fighters = [];
+        this.searchFighters = [];
+        let i = this.page - 1;
+        i = i * this.pageLimit;
+        i += 1;
         if (weightClass != 'all') {
             
             tempFighters = [];
             if (weightClass == 'men'){
-                let i = 1;
                 for (let fighter of this.allFighters) {
                     if (!fighter.weight.includes("Women's Featherweight") &&
                         !fighter.weight.includes("Women's Batamweight") &&
                         !fighter.weight.includes("Women's Flyweight") &&
                         !fighter.weight.includes("Women's Strawweight"))
                     {
-                        fighter.rank = i;
-                        tempFighters.push(fighter)
+                        let tempFighter = fighter;
+                        tempFighter.rank = i;
+                        tempFighters.push(tempFighter);
+                        if (i <= (this.pageLimit * this.page)) {
+                            fighterLimit.push(tempFighter);
+                        }
                         i += 1;
                     }
                 }
                 weightClass = "All Men" 
             } else if (weightClass == 'women'){
-                let i = 1;
                 for (let fighter of this.allFighters) {
                     if (fighter.weight.includes("Women's Featherweight") ||
                         fighter.weight.includes("Women's Batamweight") ||
                         fighter.weight.includes("Women's Flyweight") ||
                         fighter.weight.includes("Women's Strawweight"))
                     {
-                        fighter.rank = i;
-                        tempFighters.push(fighter)
+                        let tempFighter = fighter;
+                        tempFighter.rank = i;
+                        tempFighters.push(tempFighter);
+                        if (i <= (this.pageLimit * this.page)) {
+                            fighterLimit.push(tempFighter);
+                        }
                         i += 1;
                     }
                 }
                 weightClass = "All Women" 
             } else {
-                let i = 1;
                 for (let fighter of this.allFighters) {
                     if (fighter.weight.includes(weightClass)){
-                        fighter.rank = i;
-                        tempFighters.push(fighter)
+                        let tempFighter = fighter;
+                        tempFighter.rank = i;
+                        tempFighters.push(tempFighter);
+                        if (i <= (this.pageLimit * this.page)) {
+                            fighterLimit.push(tempFighter);
+                        }
                         i += 1;
                     }
                 }
             }
-            this.fighters = tempFighters;
+            this.fighters = fighterLimit;
             this.searchFighters = tempFighters;
             this.weight = weightClass;
         } else {
-            this.fighters = this.allFighters;
-            this.searchFighters = this.allFighters;
+
+            for (let fighter of this.allFighters) {
+                tempFighters.push(fighter);
+                if (i <= (this.pageLimit * this.page)) {
+                    fighterLimit.push(fighter);
+                }
+                i += 1;
+            }
+            this.fighters = fighterLimit;
+            this.searchFighters = tempFighters;
             this.weight = "All Fighters";
         }
         
