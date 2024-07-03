@@ -104,10 +104,10 @@ PetiteVue.createApp({
             tempFighters = [];
             if (weightClass == 'men'){
                 for (let fighter of this.allFighters) {
-                    if (!fighter.weight.includes("Women's Featherweight") &&
-                        !fighter.weight.includes("Women's Batamweight") &&
-                        !fighter.weight.includes("Women's Flyweight") &&
-                        !fighter.weight.includes("Women's Strawweight"))
+                    if (!("Women's Featherweight" in fighter.weight) &&
+                        !("Women's Batamweight" in fighter.weight) &&
+                        !("Women's Flyweight" in fighter.weight) &&
+                        !("Women's Strawweight" in fighter.weight))
                     {
                         let tempFighter = fighter;
                         tempFighter.rank = i;
@@ -121,10 +121,10 @@ PetiteVue.createApp({
                 weightClass = "All Men" 
             } else if (weightClass == 'women'){
                 for (let fighter of this.allFighters) {
-                    if (fighter.weight.includes("Women's Featherweight") ||
-                        fighter.weight.includes("Women's Batamweight") ||
-                        fighter.weight.includes("Women's Flyweight") ||
-                        fighter.weight.includes("Women's Strawweight"))
+                    if (("Women's Featherweight" in fighter.weight) ||
+                        ("Women's Batamweight" in fighter.weight) ||
+                        ("Women's Flyweight" in fighter.weight) ||
+                        ("Women's Strawweight" in fighter.weight))
                     {
                         let tempFighter = fighter;
                         tempFighter.rank = i;
@@ -138,14 +138,17 @@ PetiteVue.createApp({
                 weightClass = "All Women" 
             } else {
                 for (let fighter of this.allFighters) {
-                    if (fighter.weight.includes(weightClass)){
-                        let tempFighter = fighter;
-                        tempFighter.rank = i;
-                        tempFighters.push(tempFighter);
-                        if (i <= (this.pageLimit * this.page)) {
-                            fighterLimit.push(tempFighter);
+                    if (weightClass in fighter.weight){
+                        if (fighter.weight[weightClass] >= 3) {
+                            let tempFighter = fighter;
+                            tempFighter.rank = i;
+                            tempFighters.push(tempFighter);
+                            if (i <= (this.pageLimit * this.page)) {
+                                fighterLimit.push(tempFighter);
+                            }
+                            i += 1;
                         }
-                        i += 1;
+                        
                     }
                 }
             }
