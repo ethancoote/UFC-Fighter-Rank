@@ -29,8 +29,9 @@ PetiteVue.createApp({
     searchFighters: [],
     weightSelect: "",
     page: 1,
-    pageLimit: 200,
+    pageLimit: 50,
     totalPages: 1,
+    visiblePageLimit: 12,
     get onLoad() {
         fetch("/data/rankings.json")
         .then(res => res.json())
@@ -53,6 +54,12 @@ PetiteVue.createApp({
         let len = this.searchFighters.length;
         let pages = Math.ceil(len / this.pageLimit);
         this.totalPages = pages;
+        if (this.totalPages > 12){
+            this.visiblePageLimit = 12;
+        } else {
+            this.visiblePageLimit = this.totalPages;
+        }
+
     },
     onChange() {
         let tempFighters = [];
@@ -96,6 +103,10 @@ PetiteVue.createApp({
             newPage += 1;
         } else if (change == 'last' && this.page > 1) {
             newPage -= 1;
+        } else if (change == 'start') {
+            newPage = 1;
+        } else if (change == 'end') {
+            newPage = this.totalPages;
         }
         this.changePage(newPage);
     },

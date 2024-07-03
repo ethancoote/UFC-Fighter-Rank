@@ -14,25 +14,27 @@
         <title>MMA Rank</title>
     </head>
     <body id="body">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand mb-0 h1">MMA Rank</a>
-                <!--<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>-->
-                <div class="collapse navbar-collapse show" id="navbarNav">
-                    <div class="navbar-nav me-auto mb-2 mb-lg-0">
+                
+                <a class="navbar-brand mb-0 h1 layout">MMA Rank</a>                
+                <div class="collapse navbar-collapse">
+                    <div class="navbar-nav mr-auto">
                         <a class="nav-link" href="">Fighter Ranking</a>
-                        <a class="nav-link" href="">Info</a>
+                        <a class="nav-link" href="info.html">Info</a>
                     </div>
                 </div>
+                <button class="navbar-toggler navbar-toggler-right">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </div>
         </nav>
+        
         <br>
         <h1 style="text-align: center; padding-top: 50px;"><b>MMA Rank</b></h1>
         <h4 style="text-align: center;">{{ weight }}</h4>
     
-        <div class="form-outline" style="width: 650px; align-items: center; display: flex; margin: 0 auto" data-mdb-input-init>
+        <div class="form-outline" style="max-width: 650px; align-items: center; display: flex; margin: 0 auto" data-mdb-input-init>
             <input v-model="search" id="search-form-1" class="form-control" placeholder="Search Fighters" @input="onChange()"></input>
             <div class="dropright" >
                 <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="weightDropdown"  >
@@ -61,14 +63,14 @@
             
         </div>
         
-        <div class="container" style="display: flex; align-items: center;">
-            <form style="margin: 0 auto; border-style: solid; border-width: 1px; border-color: rgb(214, 214, 214); border-left: 0cap; border-right: 0cap; border-top: 0cap;" >
-                <div class="table-responsive" style="height: 500px; width:650px;">
-                    <table class="table table-striped">
+        <div style="display: flex; align-items: center; margin: 0 auto;">
+            <form class="form-outline" style="margin: 0 auto; border-style: solid; border-width: 1px; border-color: rgb(214, 214, 214); border-left: 0cap; border-right: 0cap; border-top: 0cap; width: 100%; max-width:650px" >
+                <div class="table-responsive">
+                    <table class="table table-striped" >
                         <thead class="table-dark" style="position: sticky; top: 0;">
                             <tr>
-                                <th style="width: 90px;">Rank</th>
-                                <th style="width: 400px;">Name</th>
+                                <th>Rank</th>
+                                <th>Name</th>
                                 <th>Rating</th>
                             </tr>
                         </thead>
@@ -87,11 +89,14 @@
             </form>
             
         </div>
-        <div class="container" style="width: 673px; display: flex; justify-content: flex-start;">
-                <ul class="pagination" >
-                    <li class="page-item"><a class="page-link" href="#" @click="nextLastPage( 'last' )">Previous</a></li>
-                    <li class="page-item" v-for="n in totalPages"><a class="page-link" href="#" @click="changePage( n )">{{ n }}</a></li>
-                    <li class="page-item page-next"><a class="page-link" href="#" @click="nextLastPage( 'next' )">Next</a></li>
+        <div class="container" style="max-width: 650px; display: flex; align-items: center; margin: 0 auto;">
+                <ul class="pagination" style="margin: 0 auto;">
+                    <li class="page-item"><a class="page-link" href="#" @click="nextLastPage( 'start' )">&lt&lt</a></li>
+                    <li class="page-item"><a class="page-link" href="#" @click="nextLastPage( 'last' )">&lt</a></li>
+                    
+                    <!--li class="page-item" v-for="n in totalPages"><a class="page-link" href="#" @click="changePage( n )">{{ n }}</a></li-->
+                    <li class="page-item page-next"><a class="page-link" href="#" @click="nextLastPage( 'next' )">&gt</a></li>
+                    <li class="page-item page-next"><a class="page-link" href="#" @click="nextLastPage( 'end' )">&gt&gt</a></li>
                 </ul>
         </div>
 
