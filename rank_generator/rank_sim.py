@@ -97,10 +97,12 @@ def update_ranks(all_fights, all_ranks):
         # checking if fighter has already fought
         if fighter_one in all_ranks:
             fighter_one_data = all_ranks.get(fighter_one)
-            if not weight_class in fighter_one_data:
-                fighter_one_data.append(weight_class)
+            if not fight[4] in fighter_one_data[1]:
+                fighter_one_data[1][fight[4]] = 1
             else:
-                weight_class_index = fighter_one_data
+                current_val = fighter_one_data[1].get(fight[4])
+                current_val += 1
+                fighter_one_data[1][fight[4]] = current_val
         else:
             # fighter_one_pos = update_ordered_list_position(-1, 1000, fighter_one)
             fighter_one_data = ["1000", weight_class]
@@ -108,8 +110,12 @@ def update_ranks(all_fights, all_ranks):
 
         if fighter_two in all_ranks:
             fighter_two_data = all_ranks.get(fighter_two)
-            if not weight_class in fighter_two_data:
-                fighter_two_data.append(weight_class)
+            if not fight[4] in fighter_two_data[1]:
+                fighter_two_data[1][fight[4]] = 1
+            else:
+                current_val = fighter_two_data[1].get(fight[4])
+                current_val += 1
+                fighter_two_data[1][fight[4]] = current_val
         else:
             # fighter_two_pos = update_ordered_list_position(-1, 1000, fighter_two)
             fighter_two_data = ["1000", weight_class]
@@ -179,12 +185,6 @@ def init_list_from_dict(list, dict):
     for item in dict:
         if len(dict[item]) == 2:
             list.append([item, dict[item][0], [dict[item][1]]])
-        elif len(dict[item]) == 3:
-            list.append([item, dict[item][0], [dict[item][1], dict[item][2]]])
-        elif len(dict[item]) == 4:
-            list.append([item, dict[item][0], [dict[item][1], dict[item][2], dict[item][3]]])
-        elif len(dict[item]) == 5:
-            list.append([item, dict[item][0], [dict[item][1], dict[item][2], dict[item][3], dict[item][4]]])
         else:
             print("list read error")
     return list
