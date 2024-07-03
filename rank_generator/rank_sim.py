@@ -92,13 +92,15 @@ def update_ranks(all_fights, all_ranks):
         fighter_one = fight[0]
         fight_result = fight[1]
         fighter_two = fight[2]
-        weight_class = fight[4]
+        weight_class = {fight[4]: 1} # {weightclass: # of fights in that weightclass}
 
         # checking if fighter has already fought
         if fighter_one in all_ranks:
             fighter_one_data = all_ranks.get(fighter_one)
             if not weight_class in fighter_one_data:
                 fighter_one_data.append(weight_class)
+            else:
+                weight_class_index = fighter_one_data
         else:
             # fighter_one_pos = update_ordered_list_position(-1, 1000, fighter_one)
             fighter_one_data = ["1000", weight_class]
