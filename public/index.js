@@ -90,6 +90,15 @@ PetiteVue.createApp({
         }
         this.fighters = tempFighters;
     },
+    nextLastPage(change) {
+        let newPage = this.page;
+        if (change == 'next' && this.page < this.totalPages) {
+            newPage += 1;
+        } else if (change == 'last' && this.page > 1) {
+            newPage -= 1;
+        }
+        this.changePage(newPage);
+    },
     onWeightChange(weightClass) {
         this.page = 1;
         let tempFighters = [];
