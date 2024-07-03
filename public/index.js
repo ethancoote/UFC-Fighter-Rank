@@ -90,7 +90,7 @@ PetiteVue.createApp({
         let limit = i + this.pageLimit;
         let tempFighters = [];
         this.fighters = [];
-        while (i <= ( limit ) && i <= this.searchFighters.length){
+        while (i < ( limit ) && i <= this.searchFighters.length){
             let tempFighter = this.searchFighters[i - 1];
             tempFighters.push(tempFighter);
             i += 1;
