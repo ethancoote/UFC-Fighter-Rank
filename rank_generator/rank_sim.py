@@ -182,9 +182,11 @@ def quick_sort(list, low, high):
     return list
 
 def init_list_from_dict(list, dict):
+    
     for item in dict:
+
         if len(dict[item]) == 2:
-            list.append([item, dict[item][0], [dict[item][1]]])
+            list.append([item, dict[item][0], dict[item][1]])
         else:
             print("list read error")
     return list
