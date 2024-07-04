@@ -20,6 +20,8 @@
             <a class="btn btn-dark" href="index.html">Fighter Ranking</a>
             <br>
             <a class="btn btn-dark" href="">Info</a>
+            <br>
+            <a class="btn btn-dark" href="https://github.com/ethancoote/UFC-Fighter-Rank">Source Code</a>
         </div>
         <div class="container-fluid">
             <a class="navbar-brand mb-0 h1 layout">MMA Rank</a>                
@@ -27,6 +29,7 @@
                 <div class="navbar-nav mr-auto">
                     <a class="nav-link" href="index.html">Fighter Ranking</a>
                     <a class="nav-link" href="">Info</a>
+                    <a class="nav-link" href="https://github.com/ethancoote/UFC-Fighter-Rank">Source Code</a>
                 </div>
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarOptions" aria-controls="navbarOptions" aria-label="Toggle navigation" aria-expanded="false">
@@ -36,9 +39,7 @@
     </nav>
     <br>
 
-    <h1 style="text-align: center; padding-top: 50px;"><b>MMA Rank</b></h1>
-    <h3 style="text-align: center;">Info</h3><br>
-
+    <h1 style="text-align: center; padding-top: 50px;"><b>MMA Rank</b></h1><br>
 
     <div class="container" style="max-width: 650px;">
         <h5><b>Data Collection</b></h5><br>
@@ -59,9 +60,45 @@
         <p>Put simply,
             fighters will gain many points for beating higher ranked opponents, and gain relatively few points for beating lower ranked opponents.
             The inverse is also true. Fighters will lose more points for losing to lower ranked opponents, and lose less points for losing to 
-            higher ranked opponents.</p><br>
+            higher ranked opponents.</p>
+            
+        <p>The initial rating for a new fighter is 1000 points.</p>
+        
+        <p>Only fighters with 3 or more matches in a division will be ranked in that division. A fighter's rating will carry over across weight classes.
+            This means that each fighter has only a single rating, which is affected by all matches across weight classes. 
+        </p><br>
 
-        <h5><b>Known Biases</b></h5>
+        <h5><b>Known Biases</b></h5><br>
+
+        <p><b>1. Limited Dataset</b></p>
+        
+        <p>Likely the most impactful bias of this algorithm is that the dataset only contains UFC fights. Many high level UFC fighters had impressive careers
+            in other organizations, which will not be reflected in the rankings. In addition, fighters that are stronger than their rating may suggest will
+            also have an impact on the rating of higher rated opponents that they match against. 
+        </p>
+
+        <p>There are plans to expand this dataset in the future, however currently this remains a large bias impacting the results of the rankings.</p>
+
+        <p><b>2. Bias Towards Current Fighters</b></p>
+
+        <p>The nature of a zero-sum system means that the rankings will always be biased towards fighters at their peak. Many would consider Anderson Silva
+            one of the greatest MMA fighters of all time. However, he is nowhere near the top of the rankings due to many losses at the end of his career.
+        </p>
+
+        <p>By contrast, many current fighters with less impressive peak ranks are very high on the rankings currently. This is the eb-and-flow of an ELO system
+            that punishes losing as much as it rewards winning. Fighters with less ambitious careers may be overrated due to a lack of losses.</p>
+
+        <p><b>3. Limited Sample Size</b></p>
+
+        <p>One problem with an MMA ranking system (as compared to tennis or chess), is the relative lack of matches from competetors. In the FIDE chess ranking
+            system, players must have at least 5 matches before they can be ranked. In the UFC, many fighters are signed and cut before even reaching this point.
+        </p>
+
+        <p>Where this bias is most apparent is near the bottom of this ranking system. The practice, the lowest rated fighters are not the weakest in the UFC, 
+            but rather, the fighters that were good enough to accumulate many losses. Many fighters have 2-3 matches, lose all of them, and are immediately cut.
+            These are likely the weakest fighters in the UFC, however the sample size of fights is too low for their rating to reflect their true skill. 
+        </p><br>
+
     </div>
 
     <script 
