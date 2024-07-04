@@ -15,22 +15,54 @@
     <title>MMA Rank | Info</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+        <div class="collapse" id="navbarOptions">
+            <a class="btn btn-dark" href="index.html">Fighter Ranking</a>
+            <br>
+            <a class="btn btn-dark" href="">Info</a>
+        </div>
         <div class="container-fluid">
-            <a class="navbar-brand mb-0 h1">MMA Rank</a>
-            <!--<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>-->
-            <div class="collapse navbar-collapse show" id="navbarNav">
-                <div class="navbar-nav me-auto mb-2 mb-lg-0">
+            <a class="navbar-brand mb-0 h1 layout">MMA Rank</a>                
+            <div class="collapse navbar-collapse">
+                <div class="navbar-nav mr-auto">
                     <a class="nav-link" href="index.html">Fighter Ranking</a>
                     <a class="nav-link" href="">Info</a>
                 </div>
             </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarOptions" aria-controls="navbarOptions" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
         </div>
     </nav>
     <br>
+
     <h1 style="text-align: center; padding-top: 50px;"><b>MMA Rank</b></h1>
+    <h3 style="text-align: center;">Info</h3><br>
+
+
+    <div class="container" style="max-width: 650px;">
+        <h5><b>Data Collection</b></h5><br>
+        <p>The MMA Rank algorithm currently only uses fights from <a href="http://www.ufcstats.com/statistics/events/completed?page=all">UFC Stats</a>. 
+            Stats from other MMA organizations are not included. Unoffical UFC fights <i>(such as Dana White's Contender Series)</i>, 
+            and fights from UFC purchased organizations <i>(such as Strikeforce and PRIDE)</i>, are also not included. </p>
+
+        <p>Only the events listed in the link above are used in this dataset <i>(every UFC main event and Fight Night)</i>.</p><br>
+
+        <h5><b>Ranking Algorithm</b></h5><br>
+        <p>The ranking algorithm is an ELO system with a maximum single match rating gain of 64. This value was chosen over the more
+            common value of 32 due to the smaller sample size in MMA, as compared to chess or tennis.
+        </p>
+        <p>An ELO system is zero-sum, meaning that the winner of a match will gain the same number of points as the loser will lose.
+            The amount of points won and lost in a match is calculated based on the likelihood of victory or defeat. 
+        </p>
+
+        <p>Put simply,
+            fighters will gain many points for beating higher ranked opponents, and gain relatively few points for beating lower ranked opponents.
+            The inverse is also true. Fighters will lose more points for losing to lower ranked opponents, and lose less points for losing to 
+            higher ranked opponents.</p><br>
+
+        <h5><b>Known Biases</b></h5>
+    </div>
 
     <script 
             src="https://code.jquery.com/jquery-3.4.1.slim.min.js" 
