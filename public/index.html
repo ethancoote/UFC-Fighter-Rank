@@ -14,8 +14,15 @@
         <title>MMA Rank</title>
     </head>
     <body id="body">
+        
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+            <div class="collapse" id="navbarOptions">
+                <a class="btn btn-dark" href="">Fighter Ranking</a>
+                <br>
+                <a class="btn btn-dark" href="info.html">Info</a>
+            </div>
             <div class="container-fluid">
+                
                 
                 <a class="navbar-brand mb-0 h1 layout">MMA Rank</a>                
                 <div class="collapse navbar-collapse">
@@ -24,9 +31,12 @@
                         <a class="nav-link" href="info.html">Info</a>
                     </div>
                 </div>
-                <button class="navbar-toggler navbar-toggler-right">
+
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarOptions" aria-controls="navbarOptions" aria-label="Toggle navigation" aria-expanded="false">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                
             </div>
         </nav>
         
@@ -34,10 +44,10 @@
         <h1 style="text-align: center; padding-top: 50px;"><b>MMA Rank</b></h1>
         <h4 style="text-align: center;">{{ weight }}</h4>
     
-        <div class="form-outline" style="max-width: 650px; align-items: center; display: flex; margin: 0 auto" data-mdb-input-init>
+        <div class="form-outline" style="max-width: 650px; align-items: center; display: flex; margin: 0 auto; padding-top: 10px;" data-mdb-input-init>
             <input v-model="search" id="search-form-1" class="form-control" placeholder="Search Fighters" @input="onChange()"></input>
             <div class="dropright" >
-                <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="weightDropdown"  >
+                <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="weightDropdown">
                     Weight Class
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="weightDropdown" >
@@ -100,8 +110,12 @@
                 </ul>
         </div>
 
-        <p style="text-align: center;">MMA Rank currently only uses <a href="http://www.ufcstats.com/statistics/events/completed?page=all">UFC fight data</a>.</p>
-        <p style="text-align: center;">More information about the data collection process can be found <a href="info.html">here</a>.</p>
+        <br>
+        <div class="container">
+            <p style="text-align: center;">MMA Rank currently only uses <a href="http://www.ufcstats.com/statistics/events/completed?page=all">UFC fight data</a>.</p>
+            <p style="text-align: center;">More information about the data collection process can be found <a href="info.html">here</a>.</p>
+        </div>
+        
 
         <script src="https://unpkg.com/petite-vue" defer></script>
         <script type="module" src="index.js"></script>
