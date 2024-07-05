@@ -1,7 +1,7 @@
 # MMA Stats
 
 ## Overview
-https://mma-stats-38214.web.app/
+https://mmastats.ca/
 
 - A website that displays an elo rating of UFC mixed martial arts fighters.  
 - All data is taken from [ufcstats.com](http://www.ufcstats.com/statistics/events/completed).
