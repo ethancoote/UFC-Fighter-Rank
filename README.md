@@ -1,4 +1,4 @@
-# MMA Stats
+# MMA Rank
 
 ## Overview
 https://mmastats.ca/
