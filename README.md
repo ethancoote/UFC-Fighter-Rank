@@ -50,7 +50,10 @@ Only fighters with 3 or more matches in a division will be ranked in that divisi
             
     Where this bias is most apparent is near the bottom of this ranking system. The practice, the lowest rated fighters are not the weakest in the UFC, but rather, the fighters that were good enough to accumulate many losses. Many fighters have 2-3 matches, lose all of them, and are immediately cut. These are likely the weakest fighters in the UFC, however the sample size of fights is too low for their rating to reflect their true skill. 
         
+## Author
 
+<b>Ethan Coote - </b>
+[Itch.io](https://bryanbill.itch.io/) | [GameDev Portfolio](https://ethancoote.github.io/Games-Portfolio/) 
 
 
 
