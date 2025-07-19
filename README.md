@@ -13,7 +13,7 @@ Petite-Vue is used for reactivity, Firebase is used for hosting.
 
 ### Data Collection
 
-The MMA Rank algorithm currently only uses fights from [ufcstats.com](http://www.ufcstats.com/statistics/events/completed). Stats from other MMA organizations are not included. Unofficial UFC fights <i>(such as Dana White's Contender Series)</i>, and fights from UFC purchased organizations <i>(such as Strikeforce and PRIDE)</i>, are also not included.
+The MMA Rank algorithm uses data from [ufcstats.com](http://www.ufcstats.com/statistics/events/completed). Stats from other MMA organizations are not included. Unofficial UFC fights <i>(such as Dana White's Contender Series)</i>, and fights from other UFC owned organizations <i>(such as Strikeforce and PRIDE)</i>, are not included.
 
 Only the events listed in the link above are used in this dataset <i>(every UFC main event and Fight Night)</i>.
 
