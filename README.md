@@ -3,7 +3,7 @@
 ## Overview
 https://mmastats.ca/
 
-- A website that displays an elo rating of UFC mixed martial arts fighters.  
+- A website that displays the elo rating of every UFC MMA fighter.  
 - All data is taken from [ufcstats.com](http://www.ufcstats.com/statistics/events/completed).
 - Includes every UFC main event and Fight Night.
 
@@ -25,7 +25,7 @@ The ranking algorithm is an ELO system with a maximum single match rating gain o
     
 An ELO system is zero-sum, meaning that the winner of a match will gain the same number of points as the loser will lose. The amount of points won and lost in a match is calculated based on the likelihood of victory or defeat. 
 
-Put simply, fighters will gain many points for beating higher ranked opponents, and gain relatively few points for beating lower ranked opponents. The inverse is also true. Fighters will lose more points for losing to lower ranked opponents, and lose less points for losing to 
+Fighters will gain many points for beating higher ranked opponents, and gain relatively few points for beating lower ranked opponents. Inversely, fighters will lose more points for losing to lower ranked opponents, and lose less points for losing to 
 higher ranked opponents.
 
 Only fighters with 3 or more matches in a division will be ranked in that division. A fighter's rating will carry over across weight classes. This means that each fighter has only a single rating, which is affected by all matches across weight classes. 
