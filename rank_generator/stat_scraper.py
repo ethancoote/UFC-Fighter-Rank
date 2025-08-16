@@ -25,7 +25,7 @@ def init_dataset():
     for link in all_links:
         get_event_results(link)
 
-    # this is the first UFC event. It is not listed on the events list page, so I've added it manually
+    # this is the first UFC event. It is not listed on the events list page, so I added it manually
     get_event_results("http://www.ufcstats.com/event-details/6420efac0578988b")
     return all_fight_results
 

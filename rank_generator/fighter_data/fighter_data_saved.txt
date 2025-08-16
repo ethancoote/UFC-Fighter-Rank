@@ -1,3 +1,549 @@
+Anthony Hernandez---WIN---Roman Dolidze---LOSS---Middleweight
+Steve Erceg---WIN---Ode Osbourne---LOSS---Bantamweight
+Iasmin Lucindo---WIN---Angela Hill---LOSS---Women's Strawweight
+Andre Fili---WIN---Christian Rodriguez---LOSS---Featherweight
+Jean Matsumoto---WIN---Miles Johns---LOSS---Bantamweight
+Christian Leroy Duncan---WIN---Eryk Anders---LOSS---Middleweight
+Julius Walker---WIN---Rafael Cerqueira---LOSS---Light Heavyweight
+Elijah Smith---WIN---Toshiomi Kazama---LOSS---Bantamweight
+Joselyne Edwards---WIN---Priscila Cachoeira---LOSS---Women's Bantamweight
+Uros Medic---WIN---Gilbert Urbina---LOSS---Welterweight
+Gabriella Fernandes---WIN---Julija Stoliarenko---LOSS---Women's Flyweight
+Eric McConico---WIN---Cody Brundage---LOSS---Light Heavyweight
+Tatsuro Taira---WIN---HyunSung Park---LOSS---Flyweight
+Chris Duncan---WIN---Mateusz Rebecki---LOSS---Lightweight
+Esteban Ribovics---WIN---Elves Brener---LOSS---Lightweight
+Karol Rosa---WIN---Nora Cornolle---LOSS---Women's Bantamweight
+Neil Magny---WIN---Elizeu Zaleski dos Santos---LOSS---Welterweight
+Kevin Vallejos---WIN---Danny Silva---LOSS---Featherweight
+Rinya Nakamura---WIN---Nathan Fletcher---LOSS---Bantamweight
+Rodolfo Vieira---WIN---Tresean Gore---LOSS---Middleweight
+Andrey Pulyaev---WIN---Nick Klein---LOSS---Middleweight
+Austin Bashi---WIN---John Yannis---LOSS---Featherweight
+Rafael Estevam---WIN---Felipe Bunes---LOSS---Flyweight
+Piera Rodriguez---WIN---Ketlen Souza---LOSS---Women's Strawweight
+Reinier de Ridder---WIN---Robert Whittaker---LOSS---Middleweight
+Petr Yan---WIN---Marcus McGhee---LOSS---Bantamweight
+Shara Magomedov---WIN---Marc-Andre Barriault---LOSS---Middleweight
+Asu Almabayev---WIN---Jose Ochoa---LOSS---Flyweight
+Bogdan Guskov---WIN---Nikita Krylov---LOSS---Light Heavyweight
+Bryce Mitchell---WIN---Said Nurmagomedov---LOSS---Bantamweight
+Muslim Salikhov---WIN---Carlos Leal---LOSS---Welterweight
+Davey Grant---WIN---Da'Mon Blackshear---LOSS---Bantamweight
+Tabatha Ricci---WIN---Amanda Ribas---LOSS---Women's Strawweight
+Billy Elekana---WIN---Ibo Aslan---LOSS---Light Heavyweight
+Steven Nguyen---WIN---Mohammad Yahya---LOSS---Featherweight
+Martin Buday---WIN---Marcus Buchecha---LOSS---Heavyweight
+Max Holloway---WIN---Dustin Poirier---LOSS---Lightweight
+Paulo Costa---WIN---Roman Kopylov---LOSS---Middleweight
+Daniel Rodriguez---WIN---Kevin Holland---LOSS---Welterweight
+Patricio Freire---WIN---Dan Ige---LOSS---Featherweight
+Michael Johnson---WIN---Daniel Zellhuber---LOSS---Lightweight
+Vinicius Oliveira---WIN---Kyler Phillips---LOSS---Bantamweight
+Brendan Allen---WIN---Marvin Vettori---LOSS---Middleweight
+Nikolay Veretennikov---WIN---Francisco Prado---LOSS---Welterweight
+Ateba Gautier---WIN---Robert Valentin---LOSS---Middleweight
+Islam Dulatov---WIN---Adam Fugitt---LOSS---Welterweight
+Jimmy Crute---WIN---Marcin Prachnio---LOSS---Light Heavyweight
+Ryan Spann---WIN---Lukasz Brzeski---LOSS---Heavyweight
+Brunno Ferreira---WIN---Jackson McVey---LOSS---Middleweight
+Carli Judice---WIN---Nicolle Caliari---LOSS---Women's Flyweight
+Derrick Lewis---WIN---Tallison Teixeira---LOSS---Heavyweight
+Gabriel Bonfim---WIN---Stephen Thompson---LOSS---Welterweight
+Steve Garcia---WIN---Calvin Kattar---LOSS---Featherweight
+Morgan Charriere---WIN---Nate Landwehr---LOSS---Featherweight
+Vitor Petrino---WIN---Austen Lane---LOSS---Heavyweight
+Tuco Tokkos---WIN---Junior Tafa---LOSS---Light Heavyweight
+Chris Curtis---WIN---Max Griffin---LOSS---Welterweight
+Jake Matthews---WIN---Chidi Njokuani---LOSS---Welterweight
+Eduarda Moura---WIN---Lauren Murphy---LOSS---Women's Flyweight
+Valter Walker---WIN---Kennedy Nzechukwu---LOSS---Heavyweight
+Mike Davis---WIN---Mitch Ramirez---LOSS---Lightweight
+Fatima Kline---WIN---Melissa Martinez---LOSS---Women's Strawweight
+Ilia Topuria---WIN---Charles Oliveira---LOSS---Lightweight
+Alexandre Pantoja---WIN---Kai Kara-France---LOSS---Flyweight
+Joshua Van---WIN---Brandon Royval---LOSS---Flyweight
+Beneil Dariush---WIN---Renato Moicano---LOSS---Lightweight
+Payton Talbott---WIN---Felipe Lima---LOSS---Bantamweight
+Gregory Rodrigues---WIN---Jack Hermansson---LOSS---Middleweight
+Jose Delgado---WIN---Hyder Amil---LOSS---Featherweight
+Tracy Cortez---WIN---Viviane Araujo---LOSS---Women's Flyweight
+Terrance McKinney---WIN---Viacheslav Borshchev---LOSS---Lightweight
+Jacobe Smith---WIN---Niko Price---LOSS---Welterweight
+Jhonata Diniz---WIN---Alvin Hines---LOSS---Heavyweight
+Khalil Rountree Jr.---WIN---Jamahal Hill---LOSS---Light Heavyweight
+Rafael Fiziev---WIN---Ignacio Bahamondes---LOSS---Lightweight
+Curtis Blaydes---WIN---Rizvan Kuniev---LOSS---Heavyweight
+Myktybek Orolbai---WIN---Tofiq Musayev---LOSS---Catch Weight
+Nazim Sadykhov---WIN---Nikolas Motta---LOSS---Lightweight
+Muhammad Naimov---WIN---Bogdan Grad---LOSS---Featherweight
+Seokhyeon Ko---WIN---Oban Elliott---LOSS---Welterweight
+JunYong Park---WIN---Ismail Naurdiev---LOSS---Middleweight
+Daria Zhelezniakova---WIN---Melissa Mullins---LOSS---Women's Bantamweight
+Klaudia Sygula---WIN---Irina Alekseeva---LOSS---Women's Bantamweight
+Tagir Ulanbekov---WIN---Azat Maksum---LOSS---Flyweight
+Mohammed Usman---WIN---Hamdy Abdelwahab---LOSS---Heavyweight
+Kamaru Usman---WIN---Joaquin Buckley---LOSS---Welterweight
+Rose Namajunas---WIN---Miranda Maverick---LOSS---Women's Flyweight
+Edmen Shahbazyan---WIN---Andre Petroski---LOSS---Middleweight
+Raoni Barcelos---WIN---Cody Garbrandt---LOSS---Bantamweight
+Mansur Abdul-Malik---DRAW---Cody Brundage---DRAW---Middleweight
+Alonzo Menifield---WIN---Oumar Sy---LOSS---Light Heavyweight
+Paul Craig---NC---Rodolfo Bellato---NC---Light Heavyweight
+Michael Chiesa---WIN---Court McGee---LOSS---Welterweight
+Malcolm Wellmaker---WIN---Kris Moutinho---LOSS---Bantamweight
+Jose Ochoa---WIN---Cody Durden---LOSS---Flyweight
+Ricky Simon---WIN---Cameron Smotherman---LOSS---Bantamweight
+Phil Rowe---WIN---Ange Loosa---LOSS---Welterweight
+Jamey-Lyn Horth---WIN---Vanessa Demopoulos---LOSS---Women's Flyweight
+Merab Dvalishvili---WIN---Sean O'Malley---LOSS---Bantamweight
+Kayla Harrison---WIN---Julianna Pena---LOSS---Women's Bantamweight
+Joe Pyfer---WIN---Kelvin Gastelum---LOSS---Middleweight
+Mario Bautista---WIN---Patchy Mix---LOSS---Bantamweight
+Kevin Holland---WIN---Vicente Luque---LOSS---Welterweight
+Joshua Van---WIN---Bruno Silva---LOSS---Flyweight
+Azamat Murzakanov---WIN---Brendson Ribeiro---LOSS---Light Heavyweight
+Waldo Cortes-Acosta---WIN---Serghei Spivac---LOSS---Heavyweight
+Andreas Gustafsson---WIN---Khaos Williams---LOSS---Welterweight
+Wang Cong---WIN---Ariane da Silva---LOSS---Women's Flyweight
+JooSang Yoo---WIN---Jeka Saragih---LOSS---Featherweight
+Quillan Salkilld---WIN---Yanal Ashmouz---LOSS---Lightweight
+MarQuel Mederos---WIN---Mark Choinski---LOSS---Lightweight
+Mateusz Gamrot---WIN---Ludovit Klein---LOSS---Lightweight
+Ramiz Brahimaj---WIN---Billy Ray Goff---LOSS---Welterweight
+Dustin Jacoby---WIN---Bruno Lopes---LOSS---Light Heavyweight
+Ketlen Vieira---WIN---Macy Chiasson---LOSS---Women's Featherweight
+Zachary Reese---WIN---Dusko Todorovic---LOSS---Middleweight
+Allan Nascimento---WIN---Jafel Filho---LOSS---Flyweight
+Jordan Leavitt---WIN---Kurt Holobaugh---LOSS---Lightweight
+Bolaji Oki---WIN---Michael Aswell---LOSS---Lightweight
+Alice Ardelean---WIN---Rayanne dos Santos---LOSS---Women's Strawweight
+Michael Morales---WIN---Gilbert Burns---LOSS---Welterweight
+Mairon Santos---WIN---Sodiq Yusuff---LOSS---Lightweight
+Nursulton Ruziboev---WIN---Dustin Stoltzfus---LOSS---Middleweight
+Melquizael Costa---WIN---Julian Erosa---LOSS---Featherweight
+Gabe Green---WIN---Matheus Camilo---LOSS---Lightweight
+Jared Gordon---WIN---Thiago Moises---LOSS---Lightweight
+Yadier del Valle---WIN---Connor Matthews---LOSS---Featherweight
+Luana Santos---WIN---Tainara Lisboa---LOSS---Women's Bantamweight
+Denise Gomes---WIN---Elise Reed---LOSS---Women's Strawweight
+HyunSung Park---WIN---Carlos Hernandez---LOSS---Flyweight
+Tecia Pennington---WIN---Luana Pinheiro---LOSS---Women's Strawweight
+Jack Della Maddalena---WIN---Belal Muhammad---LOSS---Welterweight
+Valentina Shevchenko---WIN---Manon Fiorot---LOSS---Women's Flyweight
+Aiemann Zahabi---WIN---Jose Aldo---LOSS---Featherweight
+Natalia Silva---WIN---Alexa Grasso---LOSS---Women's Flyweight
+Benoit Saint Denis---WIN---Kyle Prepolec---LOSS---Lightweight
+Mike Malott---WIN---Charles Radtke---LOSS---Welterweight
+Jasmine Jasudavicius---WIN---Jessica Andrade---LOSS---Women's Flyweight
+Modestas Bukauskas---WIN---Ion Cutelaba---LOSS---Light Heavyweight
+Navajo Stirling---WIN---Ivan Erslan---LOSS---Light Heavyweight
+Marc-Andre Barriault---WIN---Bruno Silva---LOSS---Middleweight
+Daniel Santos---WIN---JeongYeong Lee---LOSS---Featherweight
+Bekzat Almakhan---WIN---Brad Katona---LOSS---Bantamweight
+Cory Sandhagen---WIN---Deiveson Figueiredo---LOSS---Bantamweight
+Reinier de Ridder---WIN---Bo Nickal---LOSS---Middleweight
+Daniel Rodriguez---WIN---Santiago Ponzinibbio---LOSS---Welterweight
+Montel Jackson---WIN---Daniel Marcos---LOSS---Bantamweight
+Serhiy Sidey---WIN---Cameron Smotherman---LOSS---Bantamweight
+Mason Jones---WIN---Jeremy Stephens---LOSS---Lightweight
+Yana Santos---WIN---Miesha Tate---LOSS---Women's Bantamweight
+Azamat Bekoev---WIN---Ryan Loder---LOSS---Middleweight
+Gillian Robertson---WIN---Marina Rodriguez---LOSS---Women's Strawweight
+Quang Le---WIN---Gaston Bolanos---LOSS---Bantamweight
+Thomas Petersen---WIN---Don'Tale Mayes---LOSS---Heavyweight
+Juliana Miller---WIN---Ivana Petrovic---LOSS---Women's Flyweight
+Ian Machado Garry---WIN---Carlos Prates---LOSS---Welterweight
+Zhang Mingyang---WIN---Anthony Smith---LOSS---Light Heavyweight
+David Onama---WIN---Giga Chikadze---LOSS---Featherweight
+Abus Magomedov---WIN---Michel Pereira---LOSS---Middleweight
+Randy Brown---WIN---Nicolas Dalby---LOSS---Welterweight
+Ikram Aliskerov---WIN---Andre Muniz---LOSS---Middleweight
+Matt Schnell---WIN---Jimmy Flick---LOSS---Flyweight
+Evan Elder---WIN---Gauge Young---LOSS---Lightweight
+Chris Gutierrez---WIN---John Castaneda---LOSS---Featherweight
+Da'Mon Blackshear---WIN---Alatengheili---LOSS---Bantamweight
+Malcolm Wellmaker---WIN---Cameron Saaiman---LOSS---Bantamweight
+Jaqueline Amorim---WIN---Polyana Viana---LOSS---Women's Strawweight
+Timmy Cuamba---WIN---Roberto Romero---LOSS---Featherweight
+Joselyne Edwards---WIN---Chelsea Chandler---LOSS---Women's Bantamweight
+Alexander Volkanovski---WIN---Diego Lopes---LOSS---Featherweight
+Paddy Pimblett---WIN---Michael Chandler---LOSS---Lightweight
+Yair Rodriguez---WIN---Patricio Freire---LOSS---Featherweight
+Jean Silva---WIN---Bryce Mitchell---LOSS---Featherweight
+Dominick Reyes---WIN---Nikita Krylov---LOSS---Light Heavyweight
+Dan Ige---WIN---Sean Woodson---LOSS---Featherweight
+Virna Jandiroba---WIN---Yan Xiaonan---LOSS---Women's Strawweight
+Chase Hooper---WIN---Jim Miller---LOSS---Lightweight
+Julian Erosa---WIN---Darren Elkins---LOSS---Featherweight
+Michal Oleksiejczuk---WIN---Sedriques Dumas---LOSS---Middleweight
+Sumudaerji---WIN---Mitch Raposo---LOSS---Flyweight
+Marco Tulio---WIN---Tresean Gore---LOSS---Middleweight
+Nora Cornolle---WIN---Hailey Cowan---LOSS---Women's Bantamweight
+Lerone Murphy---WIN---Josh Emmett---LOSS---Featherweight
+Pat Sabatini---WIN---Joanderson Brito---LOSS---Featherweight
+ChangHo Lee---WIN---Cortavious Romious---LOSS---Bantamweight
+Brad Tavares---WIN---Gerald Meerschaert---LOSS---Middleweight
+Ode Osbourne---WIN---Luis Gurule---LOSS---Flyweight
+Torrez Finney---WIN---Robert Valentin---LOSS---Middleweight
+Dione Barbosa---WIN---Diana Belbita---LOSS---Women's Flyweight
+Rhys McKee---WIN---Daniel Frunza---LOSS---Welterweight
+Loma Lookboonmee---WIN---Istela Nunes---LOSS---Women's Strawweight
+Victor Henry---WIN---Pedro Falcao---LOSS---Bantamweight
+Martin Buday---WIN---Uran Satybaldiev---LOSS---Heavyweight
+Talita Alencar---WIN---Vanessa Demopoulos---LOSS---Women's Strawweight
+Brandon Moreno---WIN---Steve Erceg---LOSS---Flyweight
+Manuel Torres---WIN---Drew Dober---LOSS---Lightweight
+Edgar Chairez---WIN---CJ Vergara---LOSS---Flyweight
+Raul Rosas Jr.---WIN---Vince Morales---LOSS---Bantamweight
+David Martinez---WIN---Saimon Oliveira---LOSS---Bantamweight
+Kevin Borjas---WIN---Ronaldo Rodriguez---LOSS---Flyweight
+Ateba Gautier---WIN---Jose Daniel Medina---LOSS---Middleweight
+Melquizael Costa---WIN---Christian Rodriguez---LOSS---Featherweight
+Loopy Godinez---WIN---Julia Polastri---LOSS---Women's Strawweight
+Rafa Garcia---WIN---Vinc Pichel---LOSS---Lightweight
+Jamall Emmers---WIN---Gabriel Miranda---LOSS---Featherweight
+MarQuel Mederos---WIN---Austin Hubbard---LOSS---Lightweight
+Sean Brady---WIN---Leon Edwards---LOSS---Welterweight
+Carlos Ulberg---WIN---Jan Blachowicz---LOSS---Light Heavyweight
+Kevin Holland---WIN---Gunnar Nelson---LOSS---Welterweight
+Alexia Thainara---WIN---Molly McCann---LOSS---Women's Strawweight
+Chris Duncan---WIN---Jordan Vucenic---LOSS---Lightweight
+Nathaniel Wood---WIN---Morgan Charriere---LOSS---Featherweight
+Chris Padilla---WIN---Jai Herbert---LOSS---Lightweight
+Lone'er Kavanagh---WIN---Felipe dos Santos---LOSS---Flyweight
+Marcin Tybura---WIN---Mick Parkin---LOSS---Heavyweight
+Christian Leroy Duncan---WIN---Andrey Pulyaev---LOSS---Middleweight
+Shauna Bannon---WIN---Puja Tomar---LOSS---Women's Strawweight
+Caolan Loughran---WIN---Nathan Fletcher---LOSS---Bantamweight
+Kaue Fernandes---WIN---Guram Kutateladze---LOSS---Lightweight
+Roman Dolidze---WIN---Marvin Vettori---LOSS---Middleweight
+Chidi Njokuani---WIN---Elizeu Zaleski dos Santos---LOSS---Welterweight
+Alexander Hernandez---WIN---Kurt Holobaugh---LOSS---Lightweight
+Da'Mon Blackshear---WIN---Cody Gibson---LOSS---Bantamweight
+Brendson Ribeiro---WIN---Diyar Nurgozhay---LOSS---Light Heavyweight
+Kevin Vallejos---WIN---SeungWoo Choi---LOSS---Featherweight
+Waldo Cortes-Acosta---WIN---Ryan Spann---LOSS---Heavyweight
+SuYoung You---WIN---AJ Cunningham---LOSS---Bantamweight
+Carlos Vera---WIN---Josias Musasa---LOSS---Bantamweight
+Sam Hughes---WIN---Stephanie Luciano---LOSS---Women's Strawweight
+Andre Lima---WIN---Daniel Barez---LOSS---Flyweight
+Priscila Cachoeira---WIN---Josiane Nunes---LOSS---Women's Bantamweight
+Carli Judice---WIN---Yuneisy Duben---LOSS---Women's Flyweight
+Magomed Ankalaev---WIN---Alex Pereira---LOSS---Light Heavyweight
+Justin Gaethje---WIN---Rafael Fiziev---LOSS---Lightweight
+Ignacio Bahamondes---WIN---Jalin Turner---LOSS---Lightweight
+Amanda Lemos---WIN---Iasmin Lucindo---LOSS---Women's Strawweight
+Mauricio Ruffy---WIN---King Green---LOSS---Lightweight
+Joshua Van---WIN---Rei Tsuruya---LOSS---Flyweight
+Brunno Ferreira---WIN---Armen Petrosyan---LOSS---Middleweight
+Carlos Leal---WIN---Alex Morono---LOSS---Welterweight
+Mairon Santos---WIN---Francis Marshall---LOSS---Featherweight
+Ozzy Diaz---WIN---Djorden Santos---LOSS---Middleweight
+Manel Kape---WIN---Asu Almabayev---LOSS---Flyweight
+Cody Brundage---WIN---Julian Marquez---LOSS---Middleweight
+Nasrat Haqparast---WIN---Esteban Ribovics---LOSS---Lightweight
+Hyder Amil---WIN---William Gomis---LOSS---Featherweight
+Sam Patterson---WIN---Danny Barlow---LOSS---Welterweight
+Mario Pinto---WIN---Austen Lane---LOSS---Heavyweight
+Chepe Mariscal---WIN---Ricardo Ramos---LOSS---Featherweight
+Danny Silva---WIN---Lucas Almeida---LOSS---Featherweight
+JJ Aldrich---WIN---Andrea Lee---LOSS---Women's Flyweight
+Ramazan Temirov---WIN---Charles Johnson---LOSS---Flyweight
+Song Yadong---WIN---Henry Cejudo---LOSS---Bantamweight
+Anthony Hernandez---WIN---Brendan Allen---LOSS---Middleweight
+Rob Font---WIN---Jean Matsumoto---LOSS---Catch Weight
+Jean Silva---WIN---Melsik Baghdasaryan---LOSS---Featherweight
+Alonzo Menifield---WIN---Julius Walker---LOSS---Light Heavyweight
+Ion Cutelaba---WIN---Ibo Aslan---LOSS---Light Heavyweight
+Melquizael Costa---WIN---Andre Fili---LOSS---Featherweight
+Mansur Abdul-Malik---WIN---Nick Klein---LOSS---Middleweight
+Ricky Simon---WIN---Javid Basharat---LOSS---Bantamweight
+Austin Vanderford---WIN---Nikolay Veretennikov---LOSS---Catch Weight
+Nursulton Ruziboev---WIN---Eric McConico---LOSS---Middleweight
+Modestas Bukauskas---WIN---Rafael Cerqueira---LOSS---Light Heavyweight
+Jared Cannonier---WIN---Gregory Rodrigues---LOSS---Middleweight
+Youssef Zalal---WIN---Calvin Kattar---LOSS---Featherweight
+Edmen Shahbazyan---WIN---Dylan Budka---LOSS---Middleweight
+Nazim Sadykhov---WIN---Ismael Bonfim---LOSS---Lightweight
+Andre Petroski---WIN---Rodolfo Vieira---LOSS---Middleweight
+Jose Delgado---WIN---Connor Matthews---LOSS---Featherweight
+Angela Hill---WIN---Ketlen Souza---LOSS---Women's Strawweight
+Rafael Estevam---WIN---Jesus Aguilar---LOSS---Flyweight
+Gabriel Bonfim---WIN---Khaos Williams---LOSS---Welterweight
+Elijah Smith---WIN---Vince Morales---LOSS---Bantamweight
+Valter Walker---WIN---Don'Tale Mayes---LOSS---Heavyweight
+Jacqueline Cavalcanti---WIN---Julia Avila---LOSS---Women's Bantamweight
+Dricus Du Plessis---WIN---Sean Strickland---LOSS---Middleweight
+Zhang Weili---WIN---Tatiana Suarez---LOSS---Women's Strawweight
+Tallison Teixeira---WIN---Justin Tafa---LOSS---Heavyweight
+Jimmy Crute---DRAW---Rodolfo Bellato---DRAW---Light Heavyweight
+Jake Matthews---WIN---Francisco Prado---LOSS---Welterweight
+Gabriel Santos---WIN---Jack Jenkins---LOSS---Featherweight
+Tom Nolan---WIN---Viacheslav Borshchev---LOSS---Lightweight
+Wang Cong---WIN---Bruna Brasil---LOSS---Women's Flyweight
+Aleksandre Topuria---WIN---Colby Thicknesse---LOSS---Bantamweight
+Rongzhu---WIN---Kody Steele---LOSS---Lightweight
+Jonathan Micallef---WIN---Kevin Jousset---LOSS---Welterweight
+Quillan Salkilld---WIN---Anshul Jubli---LOSS---Lightweight
+Nassourdine Imavov---WIN---Israel Adesanya---LOSS---Middleweight
+Michael Page---WIN---Shara Magomedov---LOSS---Middleweight
+Sergei Pavlovich---WIN---Jairzinho Rozenstruik---LOSS---Heavyweight
+Vinicius Oliveira---WIN---Said Nurmagomedov---LOSS---Bantamweight
+Fares Ziam---WIN---Mike Davis---LOSS---Lightweight
+Muhammad Naimov---WIN---Kaan Ofli---LOSS---Featherweight
+Shamil Gaziev---WIN---Thomas Petersen---LOSS---Heavyweight
+Terrance McKinney---WIN---Damir Hadzovic---LOSS---Lightweight
+Jasmine Jasudavicius---WIN---Mayra Bueno Silva---LOSS---Women's Flyweight
+Bogdan Grad---WIN---Lucas Alexander---LOSS---Featherweight
+Hamdy Abdelwahab---WIN---Jamal Pogues---LOSS---Heavyweight
+Islam Makhachev---WIN---Renato Moicano---LOSS---Lightweight
+Merab Dvalishvili---WIN---Umar Nurmagomedov---LOSS---Bantamweight
+Jiri Prochazka---WIN---Jamahal Hill---LOSS---Light Heavyweight
+Jailton Almeida---WIN---Serghei Spivac---LOSS---Heavyweight
+Reinier de Ridder---WIN---Kevin Holland---LOSS---Middleweight
+Raoni Barcelos---WIN---Payton Talbott---LOSS---Bantamweight
+Azamat Bekoev---WIN---Zachary Reese---LOSS---Middleweight
+Bogdan Guskov---WIN---Billy Elekana---LOSS---Light Heavyweight
+Grant Dawson---WIN---Diego Ferreira---LOSS---Lightweight
+Ailin Perez---WIN---Karol Rosa---LOSS---Women's Bantamweight
+Muin Gafurov---WIN---Rinya Nakamura---LOSS---Bantamweight
+Benardo Sopaj---WIN---Ricky Turcios---LOSS---Bantamweight
+Tagir Ulanbekov---WIN---Clayton Carpenter---LOSS---Flyweight
+Mackenzie Dern---WIN---Amanda Ribas---LOSS---Women's Strawweight
+Santiago Ponzinibbio---WIN---Carlston Harris---LOSS---Welterweight
+Cesar Almeida---WIN---Abdul Razak Alhassan---LOSS---Middleweight
+Roman Kopylov---WIN---Chris Curtis---LOSS---Middleweight
+Christian Rodriguez---WIN---Austin Bashi---LOSS---Featherweight
+Punahele Soriano---WIN---Uros Medic---LOSS---Welterweight
+Felipe Bunes---WIN---Jose Johnson---LOSS---Flyweight
+Marco Tulio---WIN---Ihor Potieria---LOSS---Middleweight
+Thiago Moises---WIN---Trey Ogden---LOSS---Lightweight
+Jacobe Smith---WIN---Preston Parsons---LOSS---Welterweight
+Ernesta Kareckaite---WIN---Nicolle Caliari---LOSS---Women's Flyweight
+Bruno Lopes---WIN---Magomed Gadzhiyasulov---LOSS---Light Heavyweight
+Fatima Kline---WIN---Viktoriia Dudakova---LOSS---Women's Strawweight
+Nurullo Aliev---WIN---Joe Solecki---LOSS---Lightweight
+Joaquin Buckley---WIN---Colby Covington---LOSS---Welterweight
+Cub Swanson---WIN---Billy Quarantillo---LOSS---Featherweight
+Manel Kape---WIN---Bruno Silva---LOSS---Flyweight
+Dustin Jacoby---WIN---Vitor Petrino---LOSS---Light Heavyweight
+Daniel Marcos---WIN---Adrian Yanez---LOSS---Bantamweight
+Navajo Stirling---WIN---Tuco Tokkos---LOSS---Light Heavyweight
+Michael Johnson---WIN---Ottman Azaitar---LOSS---Lightweight
+Joel Alvarez---WIN---Drakkar Klose---LOSS---Lightweight
+Sean Woodson---WIN---Fernando Padilla---LOSS---Featherweight
+Felipe Lima---WIN---Miles Johns---LOSS---Featherweight
+Miranda Maverick---WIN---Jamey-Lyn Horth---LOSS---Women's Flyweight
+Davey Grant---WIN---Ramon Taveras---LOSS---Bantamweight
+Piera Rodriguez---WIN---Josefine Knutsson---LOSS---Women's Strawweight
+Alexandre Pantoja---WIN---Kai Asakura---LOSS---Flyweight
+Shavkat Rakhmonov---WIN---Ian Machado Garry---LOSS---Welterweight
+Ciryl Gane---WIN---Alexander Volkov---LOSS---Heavyweight
+Bryce Mitchell---WIN---Kron Gracie---LOSS---Featherweight
+Dooho Choi---WIN---Nate Landwehr---LOSS---Featherweight
+Dominick Reyes---WIN---Anthony Smith---LOSS---Light Heavyweight
+Vicente Luque---WIN---Themba Gorimbo---LOSS---Welterweight
+Movsar Evloev---WIN---Aljamain Sterling---LOSS---Featherweight
+Bryan Battle---WIN---Randy Brown---LOSS---Welterweight
+Eryk Anders---WIN---Chris Weidman---LOSS---Catch Weight
+Joshua Van---WIN---Cody Durden---LOSS---Flyweight
+Michael Chiesa---WIN---Max Griffin---LOSS---Welterweight
+Chase Hooper---WIN---Clay Guida---LOSS---Lightweight
+Kennedy Nzechukwu---WIN---Lukasz Brzeski---LOSS---Heavyweight
+Petr Yan---WIN---Deiveson Figueiredo---LOSS---Bantamweight
+Yan Xiaonan---WIN---Tabatha Ricci---LOSS---Women's Strawweight
+Muslim Salikhov---WIN---Song Kenan---LOSS---Welterweight
+Gabriella Fernandes---WIN---Wang Cong---LOSS---Women's Flyweight
+Carlos Ulberg---WIN---Volkan Oezdemir---LOSS---Light Heavyweight
+Zhang Mingyang---WIN---Ozzy Diaz---LOSS---Light Heavyweight
+SuYoung You---WIN---Baergeng Jieleyisi---LOSS---Bantamweight
+DongHun Choi---WIN---Kiru Sahota---LOSS---Flyweight
+Shi Ming---WIN---Feng Xiaocan---LOSS---Women's Strawweight
+Carlos Hernandez---WIN---Nyamjargal Tumendemberel---LOSS---Flyweight
+Lone'er Kavanagh---WIN---Jose Ochoa---LOSS---Flyweight
+Xiao Long---WIN---Quang Le---LOSS---Bantamweight
+Nikolas Motta---WIN---Maheshate---LOSS---Lightweight
+Jon Jones---WIN---Stipe Miocic---LOSS---Heavyweight
+Charles Oliveira---WIN---Michael Chandler---LOSS---Lightweight
+Bo Nickal---WIN---Paul Craig---LOSS---Middleweight
+Viviane Araujo---WIN---Karine Silva---LOSS---Women's Flyweight
+Mauricio Ruffy---WIN---James Llontop---LOSS---Catch Weight
+Marcus McGhee---WIN---Jonathan Martinez---LOSS---Bantamweight
+Jim Miller---WIN---Damon Jackson---LOSS---Lightweight
+David Onama---WIN---Roberto Romero---LOSS---Lightweight
+Marcin Tybura---WIN---Jhonata Diniz---LOSS---Heavyweight
+Ramiz Brahimaj---WIN---Mickey Gall---LOSS---Welterweight
+Oban Elliott---WIN---Bassil Hafez---LOSS---Welterweight
+Eduarda Moura---WIN---Veronica Hardy---LOSS---Women's Flyweight
+Carlos Prates---WIN---Neil Magny---LOSS---Welterweight
+Reinier de Ridder---WIN---Gerald Meerschaert---LOSS---Middleweight
+Gaston Bolanos---WIN---Cortavious Romious---LOSS---Bantamweight
+Gillian Robertson---WIN---Luana Pinheiro---LOSS---Women's Strawweight
+Mansur Abdul-Malik---WIN---Dusko Todorovic---LOSS---Middleweight
+Denise Gomes---WIN---Karolina Kowalkiewicz---LOSS---Women's Strawweight
+Elizeu Zaleski dos Santos---WIN---Zachary Scroggin---LOSS---Welterweight
+Charles Radtke---WIN---Matthew Semelsberger---LOSS---Welterweight
+Da'Mon Blackshear---WIN---Cody Stamann---LOSS---Bantamweight
+Tresean Gore---WIN---Antonio Trocoli---LOSS---Middleweight
+Melissa Mullins---WIN---Klaudia Sygula---LOSS---Women's Bantamweight
+Brandon Moreno---WIN---Amir Albazi---LOSS---Flyweight
+Erin Blanchfield---WIN---Rose Namajunas---LOSS---Women's Flyweight
+Brendson Ribeiro---WIN---Caio Machado---LOSS---Light Heavyweight
+Jasmine Jasudavicius---WIN---Ariane da Silva---LOSS---Women's Flyweight
+Dustin Stoltzfus---WIN---Marc-Andre Barriault---LOSS---Middleweight
+Mike Malott---WIN---Trevin Giles---LOSS---Welterweight
+Aiemann Zahabi---WIN---Pedro Munhoz---LOSS---Bantamweight
+Charles Jourdain---WIN---Victor Henry---LOSS---Bantamweight
+Youssef Zalal---WIN---Jack Shore---LOSS---Featherweight
+Alexandr Romanov---WIN---Rodrigo Nascimento---LOSS---Heavyweight
+Serhiy Sidey---WIN---Garrett Armfield---LOSS---Bantamweight
+Cody Gibson---WIN---Chad Anheliger---LOSS---Bantamweight
+Jamey-Lyn Horth---WIN---Ivana Petrovic---LOSS---Women's Flyweight
+Ilia Topuria---WIN---Max Holloway---LOSS---Featherweight
+Khamzat Chimaev---WIN---Robert Whittaker---LOSS---Middleweight
+Magomed Ankalaev---WIN---Aleksandar Rakic---LOSS---Light Heavyweight
+Lerone Murphy---WIN---Dan Ige---LOSS---Featherweight
+Shara Magomedov---WIN---Armen Petrosyan---LOSS---Middleweight
+Ibo Aslan---WIN---Rafael Cerqueira---LOSS---Light Heavyweight
+Geoff Neal---WIN---Rafael Dos Anjos---LOSS---Welterweight
+Mateusz Rebecki---WIN---Myktybek Orolbai---LOSS---Catch Weight
+Abus Magomedov---WIN---Brunno Ferreira---LOSS---Middleweight
+Kennedy Nzechukwu---WIN---Chris Barnett---LOSS---Heavyweight
+Farid Basharat---WIN---Victor Hugo---LOSS---Featherweight
+Ismail Naurdiev---WIN---Bruno Silva---LOSS---Middleweight
+Rinat Fakhretdinov---WIN---Carlos Leal---LOSS---Welterweight
+Anthony Hernandez---WIN---Michel Pereira---LOSS---Middleweight
+Rob Font---WIN---Kyler Phillips---LOSS---Bantamweight
+Charles Johnson---WIN---Sumudaerji---LOSS---Flyweight
+Cameron Smotherman---WIN---Jake Hadley---LOSS---Bantamweight
+Darren Elkins---WIN---Daniel Pineda---LOSS---Featherweight
+Asu Almabayev---WIN---Matheus Nicolau---LOSS---Flyweight
+Jean Matsumoto---WIN---Brad Katona---LOSS---Bantamweight
+Joselyne Edwards---WIN---Tamires Vidal---LOSS---Women's Bantamweight
+Elise Reed---WIN---Jessica Penne---LOSS---Women's Strawweight
+Melissa Martinez---WIN---Alice Ardelean---LOSS---Women's Strawweight
+Austen Lane---WIN---Robelis Despaigne---LOSS---Heavyweight
+Brandon Royval---WIN---Tatsuro Taira---LOSS---Flyweight
+JunYong Park---WIN---Brad Tavares---LOSS---Middleweight
+Chidi Njokuani---WIN---Jared Gooden---LOSS---Welterweight
+Grant Dawson---WIN---Rafa Garcia---LOSS---Lightweight
+Daniel Rodriguez---WIN---Alex Morono---LOSS---Welterweight
+Ramazan Temirov---WIN---CJ Vergara---LOSS---Flyweight
+Pat Sabatini---WIN---Jonathan Pearce---LOSS---Featherweight
+Themba Gorimbo---WIN---Niko Price---LOSS---Welterweight
+Junior Tafa---WIN---Sean Sharaf---LOSS---Heavyweight
+Julia Polastri---WIN---Cory McKenna---LOSS---Women's Strawweight
+Cody Haddon---WIN---Dan Argueta---LOSS---Bantamweight
+Clayton Carpenter---WIN---Lucas Rocha---LOSS---Flyweight
+Alex Pereira---WIN---Khalil Rountree Jr.---LOSS---Light Heavyweight
+Julianna Pena---WIN---Raquel Pennington---LOSS---Women's Bantamweight
+Mario Bautista---WIN---Jose Aldo---LOSS---Bantamweight
+Roman Dolidze---WIN---Kevin Holland---LOSS---Middleweight
+Kayla Harrison---WIN---Ketlen Vieira---LOSS---Women's Bantamweight
+Joaquin Buckley---WIN---Stephen Thompson---LOSS---Welterweight
+Iasmin Lucindo---WIN---Marina Rodriguez---LOSS---Women's Strawweight
+Alexander Hernandez---WIN---Austin Hubbard---LOSS---Lightweight
+Cesar Almeida---WIN---Ihor Potieria---LOSS---Middleweight
+Ryan Spann---WIN---Ovince Saint Preux---LOSS---Light Heavyweight
+Tecia Pennington---WIN---Carla Esparza---LOSS---Women's Strawweight
+Court McGee---WIN---Tim Means---LOSS---Welterweight
+Renato Moicano---WIN---Benoit Saint Denis---LOSS---Lightweight
+Nassourdine Imavov---WIN---Brendan Allen---LOSS---Middleweight
+William Gomis---WIN---Joanderson Brito---LOSS---Featherweight
+Bryan Battle---WIN---Kevin Jousset---LOSS---Welterweight
+Morgan Charriere---WIN---Gabriel Miranda---LOSS---Featherweight
+Fares Ziam---WIN---Matt Frevola---LOSS---Lightweight
+Ion Cutelaba---WIN---Ivan Erslan---LOSS---Light Heavyweight
+Oumar Sy---WIN---Da Woon Jung---LOSS---Light Heavyweight
+Ludovit Klein---WIN---Roosevelt Roberts---LOSS---Lightweight
+Taylor Lapilus---WIN---Vince Morales---LOSS---Bantamweight
+Ailin Perez---WIN---Daria Zhelezniakova---LOSS---Women's Bantamweight
+Daniel Barez---WIN---Victor Altamirano---LOSS---Flyweight
+Jacqueline Cavalcanti---WIN---Nora Cornolle---LOSS---Women's Bantamweight
+Chris Duncan---WIN---Bolaji Oki---LOSS---Lightweight
+Merab Dvalishvili---WIN---Sean O'Malley---LOSS---Bantamweight
+Valentina Shevchenko---WIN---Alexa Grasso---LOSS---Women's Flyweight
+Diego Lopes---WIN---Brian Ortega---LOSS---Featherweight
+Esteban Ribovics---WIN---Daniel Zellhuber---LOSS---Lightweight
+Ronaldo Rodriguez---WIN---Ode Osbourne---LOSS---Flyweight
+Norma Dumont---WIN---Irene Aldana---LOSS---Women's Bantamweight
+Ignacio Bahamondes---WIN---Manuel Torres---LOSS---Lightweight
+Ketlen Souza---WIN---Yazmin Jauregui---LOSS---Women's Strawweight
+Joshua Van---WIN---Edgar Chairez---LOSS---Flyweight
+Raul Rosas Jr.---WIN---Aoriqileng---LOSS---Bantamweight
+Sean Brady---WIN---Gilbert Burns---LOSS---Welterweight
+Natalia Silva---WIN---Jessica Andrade---LOSS---Women's Flyweight
+Steve Garcia---WIN---Kyle Nelson---LOSS---Featherweight
+Cody Durden---WIN---Matt Schnell---LOSS---Bantamweight
+Yanal Ashmouz---WIN---Trevor Peek---LOSS---Lightweight
+Chris Padilla---WIN---Rongzhu---LOSS---Lightweight
+Isaac Dulgarian---WIN---Brendon Marotte---LOSS---Featherweight
+Andre Lima---WIN---Felipe dos Santos---LOSS---Flyweight
+Gabriel Santos---WIN---Yizha---LOSS---Featherweight
+Jaqueline Amorim---WIN---Vanessa Demopoulos---LOSS---Women's Strawweight
+Andre Petroski---WIN---Dylan Budka---LOSS---Middleweight
+Nathan Fletcher---WIN---Zygimantas Ramaska---LOSS---Featherweight
+Caio Borralho---WIN---Jared Cannonier---LOSS---Middleweight
+Tabatha Ricci---WIN---Angela Hill---LOSS---Women's Strawweight
+Ryan Loder---WIN---Robert Valentin---LOSS---Middleweight
+Mairon Santos---WIN---Kaan Ofli---LOSS---Featherweight
+Michael Morales---WIN---Neil Magny---LOSS---Welterweight
+Gerald Meerschaert---WIN---Edmen Shahbazyan---LOSS---Middleweight
+Francis Marshall---WIN---Dennis Buzukja---LOSS---Lightweight
+Zachary Reese---WIN---Jose Daniel Medina---LOSS---Middleweight
+Viacheslav Borshchev---WIN---James Llontop---LOSS---Lightweight
+Jacqueline Cavalcanti---WIN---Josiane Nunes---LOSS---Women's Bantamweight
+Wang Cong---WIN---Victoria Leonardo---LOSS---Women's Flyweight
+Dricus Du Plessis---WIN---Israel Adesanya---LOSS---Middleweight
+Kai Kara-France---WIN---Steve Erceg---LOSS---Flyweight
+Dan Hooker---WIN---Mateusz Gamrot---LOSS---Lightweight
+Jairzinho Rozenstruik---WIN---Tai Tuivasa---LOSS---Heavyweight
+Carlos Prates---WIN---Li Jingliang---LOSS---Welterweight
+Valter Walker---WIN---Junior Tafa---LOSS---Heavyweight
+Ricardo Ramos---WIN---Josh Culibao---LOSS---Featherweight
+Casey O'Neill---WIN---Luana Santos---LOSS---Women's Flyweight
+Jack Jenkins---WIN---Herbert Burns---LOSS---Featherweight
+Tom Nolan---WIN---Alex Reyes---LOSS---Lightweight
+Song Kenan---WIN---Ricky Glenn---LOSS---Welterweight
+Jesus Aguilar---WIN---Stewart Nicoll---LOSS---Flyweight
+Serghei Spivac---WIN---Marcin Tybura---LOSS---Heavyweight
+Chepe Mariscal---WIN---Damon Jackson---LOSS---Featherweight
+Danny Barlow---WIN---Nikolay Veretennikov---LOSS---Welterweight
+Chris Gutierrez---WIN---Quang Le---LOSS---Bantamweight
+Yana Santos---WIN---Chelsea Chandler---LOSS---Women's Bantamweight
+Toshiomi Kazama---WIN---Charalampos Grigoriou---LOSS---Bantamweight
+Karol Rosa---WIN---Pannie Kianzad---LOSS---Women's Bantamweight
+Jhonata Diniz---WIN---Karl Williams---LOSS---Heavyweight
+Youssef Zalal---WIN---Jarno Errens---LOSS---Featherweight
+Stephanie Luciano---WIN---Talita Alencar---LOSS---Women's Strawweight
+Umar Nurmagomedov---WIN---Cory Sandhagen---LOSS---Bantamweight
+Shara Magomedov---WIN---Michal Oleksiejczuk---LOSS---Middleweight
+Deiveson Figueiredo---WIN---Marlon Vera---LOSS---Bantamweight
+Michael Chiesa---WIN---Tony Ferguson---LOSS---Welterweight
+Mackenzie Dern---WIN---Loopy Godinez---LOSS---Women's Strawweight
+Joel Alvarez---WIN---Elves Brener---LOSS---Lightweight
+Azamat Murzakanov---WIN---Alonzo Menifield---LOSS---Light Heavyweight
+Kaue Fernandes---WIN---Mohammad Yahya---LOSS---Lightweight
+Shamil Gaziev---WIN---Don'Tale Mayes---LOSS---Heavyweight
+Guram Kutateladze---WIN---Jordan Vucenic---LOSS---Lightweight
+Sam Hughes---WIN---Viktoriia Dudakova---LOSS---Women's Strawweight
+Jai Herbert---WIN---Rolando Bedoya---LOSS---Lightweight
+Sedriques Dumas---WIN---Denis Tiuliulin---LOSS---Middleweight
+Belal Muhammad---WIN---Leon Edwards---LOSS---Welterweight
+Tom Aspinall---WIN---Curtis Blaydes---LOSS---Heavyweight
+Paddy Pimblett---WIN---King Green---LOSS---Lightweight
+Gregory Rodrigues---WIN---Christian Leroy Duncan---LOSS---Middleweight
+Arnold Allen---WIN---Giga Chikadze---LOSS---Featherweight
+Nathaniel Wood---WIN---Daniel Pineda---LOSS---Featherweight
+Bruna Brasil---WIN---Molly McCann---LOSS---Women's Strawweight
+Jake Hadley---WIN---Caolan Loughran---LOSS---Bantamweight
+Muhammad Mokaev---WIN---Manel Kape---LOSS---Flyweight
+Oban Elliott---WIN---Preston Parsons---LOSS---Welterweight
+Modestas Bukauskas---WIN---Marcin Prachnio---LOSS---Light Heavyweight
+Sam Patterson---WIN---Kiefer Crosbie---LOSS---Welterweight
+Mick Parkin---WIN---Lukasz Brzeski---LOSS---Heavyweight
+Shauna Bannon---WIN---Alice Ardelean---LOSS---Women's Strawweight
 Virna Jandiroba---WIN---Amanda Lemos---LOSS---Women's Strawweight
 Steve Garcia---WIN---SeungWoo Choi---LOSS---Featherweight
 Kurt Holobaugh---WIN---Kaynan Kruschewsky---LOSS---Lightweight
