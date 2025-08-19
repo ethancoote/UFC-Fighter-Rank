@@ -15,90 +15,108 @@
 
     <title>MMA Rank | Info</title>
 </head>
-<body>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
-        <div class="collapse" id="navbarOptions">
-            <a class="btn btn-dark" href="index.html">Fighter Ranking</a>
-            <br>
-            <a class="btn btn-dark" href="">Info</a>
-            <br>
-            <a class="btn btn-dark" href="https://github.com/ethancoote/UFC-Fighter-Rank">Source Code</a>
-        </div>
-        <div class="container-fluid">
-            <a class="navbar-brand mb-0 h1 layout">MMA Rank</a>                
-            <div class="collapse navbar-collapse">
-                <div class="navbar-nav mr-auto">
-                    <a class="nav-link" href="index.html">Fighter Ranking</a>
-                    <a class="nav-link" href="">Info</a>
-                    <a class="nav-link" href="https://github.com/ethancoote/UFC-Fighter-Rank">Source Code</a>
-                </div>
+<body style="background-color: #1b1c1f; 
+            background-image: url('images/back_image_3.jpg'), url('images/back_image_2.webp');
+            background-position: left, right;
+            background-attachment: fixed;
+            background-size:cover;
+            background-repeat: no-repeat;
+            background-blend-mode: overlay;">
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top" style="border-bottom: 1px solid #40414A; opacity: 94%;">
+            <div class="collapse" id="navbarOptions">
+                <a class="btn btn-dark" href="index.html">Fighter Ranking</a>
+                <br>
+                <a class="btn btn-dark" href="info.html">Info</a>
+                <br>
+                <a class="btn btn-dark" href="https://github.com/ethancoote/UFC-Fighter-Rank">Source Code</a>
             </div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarOptions" aria-controls="navbarOptions" aria-label="Toggle navigation" aria-expanded="false">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <div class="container-fluid" style="max-width: 900px; align-items: center; display: flex;">
+                
+                <a class="navbar-brand mb-0 h1 layout">MMA Rank</a>
+                <div class="collapse navbar-collapse">
+                    <div class="navbar-nav mr-auto">
+                        <a class="nav-link" href="index.html">Fighter Ranking</a>
+                        <a class="nav-link" href="info.html">Info</a>
+                        <a class="nav-link" href="https://github.com/ethancoote/UFC-Fighter-Rank">Source Code</a>
+                    </div>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarOptions" aria-controls="navbarOptions" aria-label="Toggle navigation" aria-expanded="false">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+            </div>
+        </nav>
+
+    <div style="max-width: 800px; 
+                    align-items: center;
+                    margin: auto; 
+                    border-left: 1px solid #40414A; 
+                    border-right: 1px solid #40414A;
+                    background-color: #1c1f22;
+                    opacity: 96%;
+                    padding-top: 90px;">
+
+        <div class="container" style="max-width: 650px; color: white">
+
+            <h5><b>Data Collection</b></h5><br>
+            <p>The MMA Rank algorithm currently only uses fights from <a href="http://www.ufcstats.com/statistics/events/completed?page=all">UFC Stats</a>. 
+                Stats from other MMA organizations are not included. Unofficial UFC fights <i>(such as Dana White's Contender Series)</i>, 
+                and fights from UFC purchased organizations <i>(such as Strikeforce and PRIDE)</i>, are also not included. </p>
+
+            <p>Only the events listed in the link above are used in this dataset <i>(every UFC main event and Fight Night)</i>.</p><br>
+
+            <h5><b>Ranking Algorithm</b></h5><br>
+            <p>The initial rating for a new fighter is 1000 points.</p>
+            <p>The ranking algorithm is an ELO system with a maximum single match rating gain of 64. This value was chosen over the more
+                common value of 32 due to the smaller sample size in MMA, as compared to chess or tennis.
+            </p>
+            <p>An ELO system is zero-sum, meaning that the winner of a match will gain the same number of points as the loser will lose.
+                The amount of points won and lost in a match is calculated based on the likelihood of victory or defeat. 
+            </p>
+
+            <p>Put simply,
+                fighters will gain many points for beating higher ranked opponents, and gain relatively few points for beating lower ranked opponents.
+                The inverse is also true. Fighters will lose more points for losing to lower ranked opponents, and lose less points for losing to 
+                higher ranked opponents.</p>
+            
+            <p>Only fighters with 3 or more matches in a division will be ranked in that division. A fighter's rating will carry over across weight classes.
+                This means that each fighter has only a single rating, which is affected by all matches across weight classes. 
+            </p><br>
+
+            <h5><b>Known Biases</b></h5><br>
+
+            <p><b>1. Limited Dataset</b></p>
+            
+            <p>Likely the most impactful bias of this algorithm is that the dataset only contains UFC fights. Many high level UFC fighters had impressive careers
+                in other organizations, which will not be reflected in the rankings. In addition, fighters that are stronger than their rating may suggest will
+                also have an impact on the rating of higher rated opponents that they match against. 
+            </p>
+
+            <p>There are plans to expand this dataset in the future, however currently this remains a large bias impacting the results of the rankings.</p>
+
+            <p><b>2. Bias Towards Current Fighters</b></p>
+
+            <p>The nature of a zero-sum system means that the rankings will always be biased towards fighters at their peak. Many would consider Anderson Silva
+                one of the greatest MMA fighters of all time. However, he is nowhere near the top of the rankings due to many losses at the end of his career.
+            </p>
+
+            <p>By contrast, many current fighters with less impressive peak ranks are very high on the rankings. This is the eb-and-flow of an ELO system
+                that punishes losing as much as it rewards winning. Fighters with less ambitious careers may be overrated due to a lack of losses.</p>
+
+            <p><b>3. Limited Sample Size</b></p>
+
+            <p>One problem with an MMA ranking system (as compared to tennis or chess), is the relative lack of matches from competetors. In the FIDE chess ranking
+                system, players must have at least 5 matches before they can be ranked. In the UFC, many fighters are signed and cut before even reaching this point.
+            </p>
+
+            <p>Where this bias is most apparent is near the bottom of this ranking system. The practice, the lowest rated fighters are not the weakest in the UFC, 
+                but rather, the fighters that were good enough to accumulate many losses. Many fighters have 2-3 matches, lose all of them, and are immediately cut.
+                These are likely the weakest fighters in the UFC, however the sample size of fights is too low for their rating to reflect their true skill. 
+            </p><br>
+
         </div>
-    </nav>
-    <br>
-
-    <h1 style="text-align: center; padding-top: 50px;"><b>MMA Rank</b></h1><br>
-
-    <div class="container" style="max-width: 650px;">
-        <h5><b>Data Collection</b></h5><br>
-        <p>The MMA Rank algorithm currently only uses fights from <a href="http://www.ufcstats.com/statistics/events/completed?page=all">UFC Stats</a>. 
-            Stats from other MMA organizations are not included. Unofficial UFC fights <i>(such as Dana White's Contender Series)</i>, 
-            and fights from UFC purchased organizations <i>(such as Strikeforce and PRIDE)</i>, are also not included. </p>
-
-        <p>Only the events listed in the link above are used in this dataset <i>(every UFC main event and Fight Night)</i>.</p><br>
-
-        <h5><b>Ranking Algorithm</b></h5><br>
-        <p>The initial rating for a new fighter is 1000 points.</p>
-        <p>The ranking algorithm is an ELO system with a maximum single match rating gain of 64. This value was chosen over the more
-            common value of 32 due to the smaller sample size in MMA, as compared to chess or tennis.
-        </p>
-        <p>An ELO system is zero-sum, meaning that the winner of a match will gain the same number of points as the loser will lose.
-            The amount of points won and lost in a match is calculated based on the likelihood of victory or defeat. 
-        </p>
-
-        <p>Put simply,
-            fighters will gain many points for beating higher ranked opponents, and gain relatively few points for beating lower ranked opponents.
-            The inverse is also true. Fighters will lose more points for losing to lower ranked opponents, and lose less points for losing to 
-            higher ranked opponents.</p>
-        
-        <p>Only fighters with 3 or more matches in a division will be ranked in that division. A fighter's rating will carry over across weight classes.
-            This means that each fighter has only a single rating, which is affected by all matches across weight classes. 
-        </p><br>
-
-        <h5><b>Known Biases</b></h5><br>
-
-        <p><b>1. Limited Dataset</b></p>
-        
-        <p>Likely the most impactful bias of this algorithm is that the dataset only contains UFC fights. Many high level UFC fighters had impressive careers
-            in other organizations, which will not be reflected in the rankings. In addition, fighters that are stronger than their rating may suggest will
-            also have an impact on the rating of higher rated opponents that they match against. 
-        </p>
-
-        <p>There are plans to expand this dataset in the future, however currently this remains a large bias impacting the results of the rankings.</p>
-
-        <p><b>2. Bias Towards Current Fighters</b></p>
-
-        <p>The nature of a zero-sum system means that the rankings will always be biased towards fighters at their peak. Many would consider Anderson Silva
-            one of the greatest MMA fighters of all time. However, he is nowhere near the top of the rankings due to many losses at the end of his career.
-        </p>
-
-        <p>By contrast, many current fighters with less impressive peak ranks are very high on the rankings. This is the eb-and-flow of an ELO system
-            that punishes losing as much as it rewards winning. Fighters with less ambitious careers may be overrated due to a lack of losses.</p>
-
-        <p><b>3. Limited Sample Size</b></p>
-
-        <p>One problem with an MMA ranking system (as compared to tennis or chess), is the relative lack of matches from competetors. In the FIDE chess ranking
-            system, players must have at least 5 matches before they can be ranked. In the UFC, many fighters are signed and cut before even reaching this point.
-        </p>
-
-        <p>Where this bias is most apparent is near the bottom of this ranking system. The practice, the lowest rated fighters are not the weakest in the UFC, 
-            but rather, the fighters that were good enough to accumulate many losses. Many fighters have 2-3 matches, lose all of them, and are immediately cut.
-            These are likely the weakest fighters in the UFC, however the sample size of fights is too low for their rating to reflect their true skill. 
-        </p><br>
-
     </div>
 
     <script 

@@ -1,8 +1,21 @@
 .pagination > li > a
 {
-    background-color: white;
-    color: #212529;
-    border-color: white;
+    background-color: #1c1f22;
+    color: white;
+    border-color: #1c1f22;
+}
+
+.pagination > li > a:hover {
+    background-color: #3D4047;
+    color: white;
+    border-color: #24272b;
+}
+
+.pagination > li > a:focus {
+    background-color: #3D4047;
+    color: white;
+    border-color: #24272b;
+    box-shadow: inset 0 2px 2px #52545E;
 }
 
 * {
@@ -13,9 +26,45 @@
     font-size: 20px
 }
 
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+   background-color: #1E2024;
+   color: white;
+}
+
+.table-striped > tbody > tr:nth-child(2n) > td, .table-striped > tbody > tr:nth-child(2n) > th {
+   color: white;
+}
+
+.form-control
+{
+    background-color: #303438;
+    border-color: #303438;
+    border-bottom: 1px solid #40414A;
+    color: white;
+}
+
+.form-control::placeholder
+{
+    color: #E3E3E3;
+}
+
+.form-control:hover 
+{
+    background-color: #52545E;
+    border-color: #303438;
+    color: white;
+}
+
+.form-control:focus {
+    background-color: #52545E;
+    border-color: #303438;
+    color: white;
+    box-shadow: inset 0 1px 1px #52545E;
+} 
 
 @media only screen and (max-width: 576px) {
     .layout {
         font-size: 20px;
     }
 }
+
