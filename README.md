@@ -7,7 +7,7 @@ https://mmastats.ca/
 - All data is taken from [ufcstats.com](http://www.ufcstats.com/statistics/events/completed).
 - Includes every UFC main event and Fight Night.
 
-Petite-Vue is used for reactivity, Firebase is used for hosting.
+Petite-Vue used for reactivity, Firebase used for hosting.
 
 ## Ranking System
 
@@ -19,37 +19,35 @@ Only the events listed in the link above are used in this dataset <i>(every UFC 
 
 ### Ranking Algorithm
 
-The initial rating for a new fighter is 1000 points.
+The rating for a new fighter is 1000 points.
 
-The ranking algorithm is an ELO system with a maximum single match rating gain of 64. This value was chosen over the more common value of 32 due to the smaller sample size in MMA, as compared to chess or tennis.
+The ranking algorithm is an ELO system with a maximum single match rating gain of 64. This value was chosen over the more common value of 32 in order to produce a larger rating disparity over a smaller sample size.
     
-An ELO system is zero-sum, meaning that the winner of a match will gain the same number of points as the loser will lose. The amount of points won and lost in a match is calculated based on the likelihood of victory or defeat. 
+The winner of a match will gain the same number of points as the loser will lose. The amount of points won and lost in a match is calculated based on the likelihood of victory or defeat. 
 
-Fighters will gain many points for beating higher ranked opponents, and gain relatively few points for beating lower ranked opponents. Inversely, fighters will lose more points for losing to lower ranked opponents, and lose less points for losing to 
-higher ranked opponents.
+Fighters will gain many points for beating higher ranked opponents, and gain relatively few points for beating lower ranked opponents. Inversely, fighters will lose more points for losing to lower ranked opponents, and lose less points for losing to higher ranked opponents.
 
-Only fighters with 3 or more matches in a division will be ranked in that division. A fighter's rating will carry over across weight classes. This means that each fighter has only a single rating, which is affected by all matches across weight classes. 
+Only fighters with 3 or more matches in a division will be ranked in that division. A fighter's rating will carry over across weight classes. This means that each fighter has a single rating, which is affected by all matches across weight classes. 
 
 ### Known Biases
 
 1. #### Limited Dataset
 
-    Likely the most impactful bias of this algorithm is that the dataset only contains UFC fights. Many high level UFC fighters had impressive careers in other organizations, which will not be reflected in the rankings. In addition, fighters that are stronger than their rating may suggest will also have an impact on the rating of higher rated opponents that they match against. 
+    Likely the most impactful bias of this algorithm is that the dataset only contains UFC fights. Many high level UFC fighters had impressive careers in other organizations prior to the UFC, which will not be reflected in the rankings. Fighters that are stronger than their rating may suggest will impact the ratings of their opponents, who will win less or lose more than they should, if the 'true rating' of their opponent was taken into account. 
 
-    There are plans to expand this dataset in the future, however currently this remains a large bias impacting the results of the rankings.
+    The scope of data collection may expand in the future.
 
 2. #### Bias Towards Current Fighters
 
-    The nature of a zero-sum system means that the rankings will always be biased towards fighters at their peak. Many would consider Anderson Silva one of the greatest MMA fighters of all time. However, he is nowhere near the top of the rankings due to many losses at the end of his career.
+    The nature of a zero-sum system means that the rankings will always be biased towards fighters currently at their peak. Many fighters had higher peak rankings, but now place lower in the rankings due to late career losses.
             
-    By contrast, many current fighters with less impressive peak ranks are very high on the rankings. This is the eb-and-flow of an ELO system that punishes losing as much as it rewards winning. Fighters with less ambitious careers may be overrated due to a lack of losses.
+    Many active fighters with lower peak ranks are very high on the rankings. This is the result of an ELO system that punishes losing as much as it rewards winning. Fighters with less ambitious careers are likely to be overrated by this system.
 
 3. #### Limited Sample Size
 
-    One problem with an MMA ranking system (as compared to tennis or chess), is the relative lack of matches from competetors. In the FIDE chess ranking system, players must have at least 5 matches before they can be ranked. In the UFC, many fighters are signed and cut before even reaching this point.
+    One problem with an MMA ranking system (as compared to tennis or chess), is the relative lack of matches from competetors. In the FIDE chess ranking system, players must play at least 5 matches before they can be ranked. In the UFC, many fighters are signed and cut before reaching this point.
             
-    Where this bias is most apparent is near the bottom of this ranking system. The practice, the lowest rated fighters are not the weakest in the UFC, but rather, the fighters that were good enough to accumulate many losses. Many fighters have 2-3 matches, lose all of them, and are immediately cut. These are likely the weakest fighters in the UFC, however the sample size of fights is too low for their rating to reflect their true skill. 
-
+    Where this bias is most apparent is near the bottom of the ranking system. The lowest rated fighters are likely not the weakest in the UFC, but rather, they are the fighters that were good enough to accumulate many losses. Fighters with only a few matches are likely not rated accurately. 
 
 
 
