@@ -39,6 +39,12 @@ PetiteVue.createApp({
             let i = 1;
             for (let product of products) {
                 if (i <= this.pageLimit) {
+                    product.rating_change = Number(product.rating) - Number(product.former_rating);
+                    if (product.rating_change > -1) {
+                        product.rating_change = "+" + product.rating_change.toString();
+                    } else {
+                        product.rating_change = product.rating_change.toString();
+                    }
                     this.fighters.push(product);
                 } else {
                     break;
@@ -68,6 +74,7 @@ PetiteVue.createApp({
         for (let fighter of this.searchFighters) {
             if (fighter.name.toLowerCase().includes(this.search.toLowerCase())){
                 if (i <= this.pageLimit) {
+                    
                     tempFighters.push(fighter);
                     i += 1;
                 } else {
@@ -80,6 +87,16 @@ PetiteVue.createApp({
         } else {
             this.totalPages = 1;
         }
+
+        /*for (let tempFighter of this.tempFighters) {
+            tempFighter.rating_change = Number(tempFighter.rating) - Number(tempFighter.former_rating);
+            if (tempFighter.rating_change > -1) {
+                tempFighter.rating_change = "+" + tempFighter.rating_change.toString();
+            } else {
+                tempFighter.rating_change = tempFighter.rating_change.toString();
+            }
+        }
+        */
         this.fighters = tempFighters;
     }, 
     changePage(newPage) {
@@ -92,6 +109,7 @@ PetiteVue.createApp({
         this.fighters = [];
         while (i < ( limit ) && i <= this.searchFighters.length){
             let tempFighter = this.searchFighters[i - 1];
+            
             tempFighters.push(tempFighter);
             i += 1;
         }
@@ -131,6 +149,12 @@ PetiteVue.createApp({
                     {
                         let tempFighter = fighter;
                         tempFighter.rank = i;
+                        tempFighter.rating_change = Number(tempFighter.rating) - Number(tempFighter.former_rating);
+                        if (tempFighter.rating_change > -1) {
+                            tempFighter.rating_change = "+" + tempFighter.rating_change.toString();
+                        } else {
+                            tempFighter.rating_change = tempFighter.rating_change.toString();
+                        }
                         tempFighters.push(tempFighter);
                         if (i <= (this.pageLimit * this.page)) {
                             fighterLimit.push(tempFighter);
@@ -148,6 +172,12 @@ PetiteVue.createApp({
                     {
                         let tempFighter = fighter;
                         tempFighter.rank = i;
+                        tempFighter.rating_change = Number(tempFighter.rating) - Number(tempFighter.former_rating);
+                        if (tempFighter.rating_change > -1) {
+                            tempFighter.rating_change = "+" + tempFighter.rating_change.toString();
+                        } else {
+                            tempFighter.rating_change = tempFighter.rating_change.toString();
+                        }
                         tempFighters.push(tempFighter);
                         if (i <= (this.pageLimit * this.page)) {
                             fighterLimit.push(tempFighter);
@@ -162,6 +192,12 @@ PetiteVue.createApp({
                         if (fighter.weight[weightClass] >= 3) {
                             let tempFighter = fighter;
                             tempFighter.rank = i;
+                            tempFighter.rating_change = Number(tempFighter.rating) - Number(tempFighter.former_rating);
+                            if (tempFighter.rating_change > -1) {
+                                tempFighter.rating_change = "+" + tempFighter.rating_change.toString();
+                            } else {
+                                tempFighter.rating_change = tempFighter.rating_change.toString();
+                            }
                             tempFighters.push(tempFighter);
                             if (i <= (this.pageLimit * this.page)) {
                                 fighterLimit.push(tempFighter);
@@ -180,6 +216,12 @@ PetiteVue.createApp({
             for (let fighter of this.allFighters) {
                 let tempFighter = fighter;
                 tempFighter.rank = i;
+                tempFighter.rating_change = Number(tempFighter.rating) - Number(tempFighter.former_rating);
+                if (tempFighter.rating_change > -1) {
+                    tempFighter.rating_change = "+" + tempFighter.rating_change.toString();
+                } else {
+                    tempFighter.rating_change = tempFighter.rating_change.toString();
+                }
                 tempFighters.push(tempFighter);
                 if (i <= (this.pageLimit * this.page)) {
                     fighterLimit.push(tempFighter);
