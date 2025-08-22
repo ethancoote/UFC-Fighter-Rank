@@ -74,7 +74,12 @@ PetiteVue.createApp({
         for (let fighter of this.searchFighters) {
             if (fighter.name.toLowerCase().includes(this.search.toLowerCase())){
                 if (i <= this.pageLimit) {
-                    
+                    fighter.rating_change = Number(fighter.rating) - Number(fighter.former_rating);
+                    if (fighter.rating_change > -1) {
+                        fighter.rating_change = "+" + fighter.rating_change.toString();
+                    } else {
+                        fighter.rating_change = fighter.rating_change.toString();
+                    }
                     tempFighters.push(fighter);
                     i += 1;
                 } else {
@@ -109,7 +114,12 @@ PetiteVue.createApp({
         this.fighters = [];
         while (i < ( limit ) && i <= this.searchFighters.length){
             let tempFighter = this.searchFighters[i - 1];
-            
+            tempFighter.rating_change = Number(tempFighter.rating) - Number(tempFighter.former_rating);
+            if (tempFighter.rating_change > -1) {
+                tempFighter.rating_change = "+" + tempFighter.rating_change.toString();
+            } else {
+                tempFighter.rating_change = tempFighter.rating_change.toString();
+            }
             tempFighters.push(tempFighter);
             i += 1;
         }
