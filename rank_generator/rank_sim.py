@@ -95,6 +95,7 @@ def update_ranks(all_fights, all_ranks):
         weight_class = {fight[4]: 1} # {weightclass: # of fights in that weightclass}
 
         # checking if fighter has already fought
+        # fighter data = ["current rating", weight class, "last fight rating", "peak rating"]
         if fighter_one in all_ranks:
             fighter_one_data = all_ranks.get(fighter_one)
             if not fight[4] in fighter_one_data[1]:
@@ -104,8 +105,7 @@ def update_ranks(all_fights, all_ranks):
                 current_val += 1
                 fighter_one_data[1][fight[4]] = current_val
         else:
-            # fighter_one_pos = update_ordered_list_position(-1, 1000, fighter_one)
-            fighter_one_data = ["1000", weight_class]
+            fighter_one_data = ["1000", weight_class, "-1", "1000"]
             all_ranks[fighter_one] = fighter_one_data
 
         if fighter_two in all_ranks:
@@ -118,7 +118,7 @@ def update_ranks(all_fights, all_ranks):
                 fighter_two_data[1][fight[4]] = current_val
         else:
             # fighter_two_pos = update_ordered_list_position(-1, 1000, fighter_two)
-            fighter_two_data = ["1000", weight_class]
+            fighter_two_data = ["1000", weight_class, "-1", "1000"]
             all_ranks[fighter_two] = fighter_two_data
 
         # rank change formula
@@ -138,8 +138,16 @@ def update_ranks(all_fights, all_ranks):
         fighter_one_new_rank = round(fighter_one_new_rank)
         fighter_two_new_rank = round(fighter_two_new_rank)
 
+        # updating fighter ranks
+        all_ranks[fighter_one][2] = str(all_ranks[fighter_one][0])
         all_ranks[fighter_one][0] = str(fighter_one_new_rank)
+        if int(all_ranks[fighter_one][0]) > int(all_ranks[fighter_one][3]):
+            all_ranks[fighter_one][3] = str(all_ranks[fighter_one][0])
+
+        all_ranks[fighter_two][2] = str(all_ranks[fighter_two][0])
         all_ranks[fighter_two][0] = str(fighter_two_new_rank)
+        if int(all_ranks[fighter_two][0]) > int(all_ranks[fighter_two][3]):
+            all_ranks[fighter_two][3] = str(all_ranks[fighter_two][0])
 
         # updating rank peak
         if fighter_one_new_rank > int(peak_rank[0]):
@@ -185,8 +193,8 @@ def init_list_from_dict(list, dict):
     
     for item in dict:
 
-        if len(dict[item]) == 2:
-            list.append([item, dict[item][0], dict[item][1]])
+        if len(dict[item]) == 4:
+            list.append([item, dict[item][0], dict[item][1], dict[item][2], dict[item][3]])
         else:
             print("list read error")
     return list
@@ -201,7 +209,7 @@ def save_data(ordered_list):
     
     json_list = []
     for fighter in reversed(ordered_list):
-        temp_dict = {"rank": str(i), "name": fighter[0], "rating": fighter[1], "weight": fighter[2]}
+        temp_dict = {"rank": str(i), "name": fighter[0], "rating": fighter[1], "weight": fighter[2], "former_rating": fighter[3], "peak_rating": fighter[4]}
         json_list.append(temp_dict)
         i += 1
     json_data = json.dumps(json_list, indent=4)
